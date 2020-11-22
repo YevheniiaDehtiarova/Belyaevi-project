@@ -1,0 +1,44 @@
+ .services {
+     margin-left: $top-indent;
+     margin-right: $top-indent;
+     min-height: 100vh;
+     &__slider {
+         display: flex;
+         justify-content: space-between;
+     }
+ }
+ 
+ .services__slide {
+     &--list {
+         font-family: $font-main;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: $top-indent/3;
+         margin-top: 8px;
+     }
+     &--title {
+         font-family: $font-main;
+         font-weight: 700;
+         font-size: $top-indent/3;
+         line-height: 22px;
+         margin-top: 40px;
+         margin-bottom: $top-indent/3;
+     }
+     &--picture {
+         width: auto;
+         height: auto;
+         width: 100%;
+     }
+ }
+ 
+ .slider-arrows {
+     width: 20px;
+     height: 20px;
+ }
+ 
+ @media(max-width:992px) {
+     .services__slider {
+         display: flex;
+         flex-wrap: wrap;
+     }
+ }
