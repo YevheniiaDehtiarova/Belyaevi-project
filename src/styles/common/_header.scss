@@ -28,6 +28,9 @@
                       width: 116px;
                       height: $top-indent/2;
                       padding: 6px 32px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
                   }
                   &__list {
                       display: flex;
@@ -80,10 +83,12 @@
                       border: 2px solid $color-special;
                       font-family: $font-main;
                       margin-bottom: 80px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
                   }
                   &--button p {
                       color: $color-special;
-                      padding: 10px 20px;
                   }
               }
               
