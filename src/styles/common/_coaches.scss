@@ -1,62 +1,87 @@
-                                            .coaches {
-                                                @include topborder;
-                                                &__slider {
-                                                    display: flex;
-                                                    justify-content: space-around;
-                                                    flex-wrap: wrap;
-                                                    min-width: 0;
-                                                    &--slide {
-                                                        display: flex !important;
-                                                        min-width: 0;
-                                                    }
-                                                    &--descr {
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        margin-right: 90px;
-                                                        justify-content: space-between;
-                                                        margin-left: 20px;
-                                                    }
-                                                    &--img {
-                                                        display: flex;
-                                                        flex-wrap: wrap;
-                                                        flex-direction: row;
-                                                    }
-                                                    &--img img {
-                                                        height: 100%;
-                                                        width: auto
-                                                    }
-                                                    &--button {
-                                                        @include buttonstyle;
-                                                    }
-                                                    &--button span {
-                                                        color: $color-special;
-                                                    }
-                                                }
-                                            }
-                                            
-                                            .slick-list {
-                                                overflow: hidden;
-                                            }
-                                            
-                                            .slick-track {
+                                        .coaches {
+                                            @include topborder;
+                                            &__slider {
                                                 display: flex;
-                                            }
-                                            
-                                            .slick-slide .slick-current {
-                                                display: flex;
-                                            }
-                                            
-                                            @media(max-width:900px) {
-                                                .coaches__slider--slide {
+                                                justify-content: space-around;
+                                                flex-wrap: wrap;
+                                                min-width: 0;
+                                                &--slide {
                                                     display: flex !important;
                                                     min-width: 0;
+                                                }
+                                                &--descr {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    margin-right: 90px;
+                                                    justify-content: space-between;
+                                                    margin-left: 20px;
+                                                }
+                                                &--img {
+                                                    display: flex;
                                                     flex-wrap: wrap;
+                                                    flex-direction: row;
+                                                }
+                                                &--img img {
+                                                    height: 100%;
+                                                    width: auto
+                                                }
+                                                &--button {
+                                                    @include buttonstyle;
+                                                }
+                                                &--button span {
+                                                    color: $color-special;
                                                 }
                                             }
-                                            
-                                            @media (max-width:700p) {
-                                                .coaches {
-                                                    margin-left: $top-indent/2;
-                                                    margin-right: $top-indent/2;
-                                                }
+                                        }
+                                        
+                                        .slick-list {
+                                            overflow: hidden;
+                                        }
+                                        
+                                        .slick-track {
+                                            display: flex;
+                                        }
+                                        
+                                        .slick-slide .slick-current {
+                                            display: flex;
+                                        }
+                                        
+                                        .special__button {
+                                            display: none;
+                                        }
+                                        
+                                        @media(max-width:900px) {
+                                            .coaches__slider--slide {
+                                                display: flex !important;
+                                                min-width: 0;
+                                                flex-wrap: wrap;
                                             }
+                                            .coaches {
+                                                margin-left: $top-indent/2;
+                                                margin-right: $top-indent/2;
+                                            }
+                                        }
+                                        
+                                        @media (max-width:700px) {
+                                            .coaches {
+                                                margin-left: $top-indent/4;
+                                                margin-right: $top-indent/4;
+                                            }
+                                        }
+                                        
+                                        @media (max-width:640px) {
+                                            // .coaches__slider {
+                                            //     flex-wrap: nowrap;
+                                            // }
+                                            .coaches__btn {
+                                                display: none;
+                                            }
+                                            .special__button {
+                                                display: inline;
+                                            }
+                                            .coaches__slider--button {
+                                                border-radius: 50%;
+                                                width: 30px;
+                                                height: 10px;
+                                            }
+                                        }
