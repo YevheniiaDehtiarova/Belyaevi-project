@@ -24,9 +24,13 @@
          margin-bottom: $top-indent/3;
      }
      &--picture {
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+     }
+     &--picture img {
+         height: 100%;
          width: auto;
-         height: auto;
-         width: 100%;
      }
  }
  

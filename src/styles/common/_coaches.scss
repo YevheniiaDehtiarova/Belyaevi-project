@@ -1,45 +1,62 @@
-    .coaches__slider {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        min-width: 0;
-    }
-    
-    .coaches__slider--slide {
-        display: flex !important;
-        min-width: 0;
-    }
-    
-    .coaches__slider--descr {
-        display: flex;
-        flex-direction: column;
-        margin-right: 90px;
-        justify-content: space-between;
-        margin-left: 20px;
-    }
-    
-    .coaches__slider--img {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-    
-    .coaches__slider--button {
-        @include buttonstyle;
-    }
-    
-    .coaches__slider--button span {
-        color: $color-special;
-    }
-    
-    .slick-list {
-        overflow: hidden;
-    }
-    
-    .slick-track {
-        display: flex;
-    }
-    
-    .slick-slide .slick-current {
-        display: flex;
-    }
+                                            .coaches {
+                                                @include topborder;
+                                                &__slider {
+                                                    display: flex;
+                                                    justify-content: space-around;
+                                                    flex-wrap: wrap;
+                                                    min-width: 0;
+                                                    &--slide {
+                                                        display: flex !important;
+                                                        min-width: 0;
+                                                    }
+                                                    &--descr {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        margin-right: 90px;
+                                                        justify-content: space-between;
+                                                        margin-left: 20px;
+                                                    }
+                                                    &--img {
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        flex-direction: row;
+                                                    }
+                                                    &--img img {
+                                                        height: 100%;
+                                                        width: auto
+                                                    }
+                                                    &--button {
+                                                        @include buttonstyle;
+                                                    }
+                                                    &--button span {
+                                                        color: $color-special;
+                                                    }
+                                                }
+                                            }
+                                            
+                                            .slick-list {
+                                                overflow: hidden;
+                                            }
+                                            
+                                            .slick-track {
+                                                display: flex;
+                                            }
+                                            
+                                            .slick-slide .slick-current {
+                                                display: flex;
+                                            }
+                                            
+                                            @media(max-width:900px) {
+                                                .coaches__slider--slide {
+                                                    display: flex !important;
+                                                    min-width: 0;
+                                                    flex-wrap: wrap;
+                                                }
+                                            }
+                                            
+                                            @media (max-width:700p) {
+                                                .coaches {
+                                                    margin-left: $top-indent/2;
+                                                    margin-right: $top-indent/2;
+                                                }
+                                            }
