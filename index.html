@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="src/styles/slick.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -187,8 +187,52 @@
                 <div class="descr__title">Our Coaches</div>
                 <div class="descr__text">Coaches in our school are not only perfect dancers but also have a big experience in coaching that is why you will feel really amazing after each of your class</div>
             </div>
-            <div class="coaches__slider">
+            <div class="coaches__slider" style="display: flex;">
                 <div class="coaches__slider--slide">
+                    <div class="coaches__slider--img">
+                        <img src="src/assets/img/dancer-1.png" alt="">
+                    </div>
+                    <div class="coaches__slider--descr">
+                        <div class="coaches__slider--number">
+                            01
+                        </div>
+                        <div class="coaches__slider--title">
+                            Ann Walker
+                        </div>
+                        <div class="coaches__slider--subtitle">
+                            Dancer
+                        </div>
+                        <div class="coaches__slider-item">Work experience 8 years </div>
+                        <div class="coaches__slider-item">Teacher for 3 years</div>
+                        <div class="coaches__slider-item">Style Viennese Waltz, Salsa</div>
+                        <button class="coaches__slider--button">
+                            <span>Let’s start--</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="coaches__slider--slide" style="display: flex;">
+                    <div class="coaches__slider--img">
+                        <img src="src/assets/img/dancer-2.png" alt="">
+                    </div>
+                    <div class="coaches__slider--descr">
+                        <div class="coaches__slider--number">
+                            02
+                        </div>
+                        <div class="coaches__slider--title">
+                            Tom Wilspon
+                        </div>
+                        <div class="coaches__slider--subtitle">
+                            Dancer
+                        </div>
+                        <div class="coaches__slider-item">Work experience 10 years</div>
+                        <div class="coaches__slider-item">Teacher for 5 years</div>
+                        <div class="coaches__slider-item">Style HipHop</div>
+                        <button class="coaches__slider--button">
+                            <span>Let’s start--</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="coaches__slider--slide" style="display: flex;">
                     <div class="coaches__slider--img">
                         <img src="src/assets/img/dancer-1.png" alt="">
                     </div>
@@ -230,59 +274,6 @@
                         <button class="coaches__slider--button">
                             <span>Let’s start--</span>
                         </button>
-                    </div>
-                </div>
-                <div class="coaches__slider--slide">
-                    <div class="coaches__slider--img">
-                        <img src="src/assets/img/dancer-1.png" alt="">
-                    </div>
-                    <div class="coaches__slider--descr">
-                        <div class="coaches__slider--number">
-                            01
-                        </div>
-                        <div class="coaches__slider--title">
-                            Ann Walker
-                        </div>
-                        <div class="coaches__slider--subtitle">
-                            Dancer
-                        </div>
-                        <div class="coaches__slider-item">Work experience 8 years </div>
-                        <div class="coaches__slider-item">Teacher for 3 years</div>
-                        <div class="coaches__slider-item">Style Viennese Waltz, Salsa</div>
-                        <button class="coaches__slider--button">
-                            <span>Let’s start--</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="coaches__slider--slide">
-                    <div class="coaches__slider--img">
-                        <img src="src/assets/img/dancer-2.png" alt="">
-                    </div>
-                    <div class="coaches__slider--descr">
-                        <div class="coaches__slider--number">
-                            02
-                        </div>
-                        <div class="coaches__slider--title">
-                            Tom Wilspon
-                        </div>
-                        <div class="coaches__slider--subtitle">
-                            Dancer
-                        </div>
-                        <div class="coaches__slider-item">Work experience 10 years</div>
-                        <div class="coaches__slider-item">Teacher for 5 years</div>
-                        <div class="coaches__slider-item">Style HipHop</div>
-                        <button class="coaches__slider--button">
-                            <span>Let’s start--</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="arrow__container">
-                    <div class="arrow__left">
-                        <img src="src/assets/img/arrow-left.svg" alt="">
-                    </div>
-                    <span>1</span> <span>of</span> <span>4</span>
-                    <div class="arrow__right">
-                        <img src="src/assets/img/arrow-right.svg" alt="">
                     </div>
                 </div>
 
@@ -292,8 +283,6 @@
     </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
-
-
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="src/js/slick.min.js"></script>
     <script src="src/js/slider.js"></script>

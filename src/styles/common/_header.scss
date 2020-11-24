@@ -1,6 +1,4 @@
               .header-wrapper {
-                  margin-left: $top-indent;
-                  margin-right: $top-indent;
                   display: flex;
                   justify-content: space-around;
                   padding-top: 30px;
@@ -10,15 +8,13 @@
               .header {
                   min-height: 100vh;
                   max-width: 100%;
+                  margin-left: $top-indent;
+                  margin-right: $top-indent;
                   &__logo {
                       font-family: $font-main;
                       font-weight: 700;
                       font-size: $top-indent/4;
                       line-height: 16px;
-                  }
-                  &__content {
-                      margin-left: $top-indent;
-                      margin-right: $top-indent;
                   }
                   &__button {
                       font-family: $font-main;

@@ -2,10 +2,12 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        min-width: 0;
     }
     
     .coaches__slider--slide {
-        display: flex;
+        display: flex !important;
+        min-width: 0;
     }
     
     .coaches__slider--descr {
@@ -38,16 +40,14 @@
         color: $color-special;
     }
     
-    .arrow__container {
+    .slick-list {
+        overflow: hidden;
+    }
+    
+    .slick-track {
         display: flex;
-        justify-content: center;
     }
     
-    .slick-slide {
-        display: block;
-    }
-    
-    .slick-current {
-        width: 200px;
-        height: 200px;
+    .slick-slide .slick-current {
+        display: flex;
     }
