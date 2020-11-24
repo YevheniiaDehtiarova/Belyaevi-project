@@ -25,15 +25,7 @@
     }
     
     .coaches__slider--button {
-        max-width: 161px;
-        min-height: 46px;
-        border: 2px solid $color-special;
-        font-family: $font-main;
-        margin-bottom: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 56px;
+        @include buttonstyle;
     }
     
     .coaches__slider--button span {

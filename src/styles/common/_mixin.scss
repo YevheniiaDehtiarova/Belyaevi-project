@@ -1,0 +1,17 @@
+@mixin buttonstyle {
+    max-width: $top-indent*2;
+    min-height: 46px;
+    border: 2px solid $color-special;
+    font-family: $font-main;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+    background-color: #fff;
+}
+
+@mixin topborder {
+    margin-left: $top-indent;
+    margin-right: $top-indent;
+}

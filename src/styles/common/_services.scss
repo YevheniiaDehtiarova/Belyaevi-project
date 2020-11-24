@@ -1,6 +1,5 @@
  .services {
-     margin-left: $top-indent;
-     margin-right: $top-indent;
+     @include topborder;
      min-height: 100vh;
      &__slider {
          display: flex;

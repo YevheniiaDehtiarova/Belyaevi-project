@@ -1,6 +1,5 @@
     .offer {
-        margin-left: $top-indent;
-        margin-right: $top-indent;
+        @include topborder;
         max-width: 100%;
         &__list {
             display: grid;

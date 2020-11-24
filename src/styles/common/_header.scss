@@ -8,8 +8,7 @@
               .header {
                   min-height: 100vh;
                   max-width: 100%;
-                  margin-left: $top-indent;
-                  margin-right: $top-indent;
+                  @include topborder;
                   &__logo {
                       font-family: $font-main;
                       font-weight: 700;
@@ -75,14 +74,7 @@
                       line-height: $top-indent/3;
                   }
                   &--button {
-                      max-width: 161px;
-                      min-height: 46px;
-                      border: 2px solid $color-special;
-                      font-family: $font-main;
-                      margin-bottom: 80px;
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
+                      @include buttonstyle;
                   }
                   &--button p {
                       color: $color-special;
