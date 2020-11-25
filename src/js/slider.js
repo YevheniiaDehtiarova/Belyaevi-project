@@ -49,12 +49,11 @@ $('.coaches__slider').slick({
     responsive: [{
         breakpoint: 600,
         settings: {
-            slidesToShow: 1.5,
-            slidesToScroll: 1,
-            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 2,
             infinite: true,
             dots: false,
-            centerPadding: '5px',
+            centerMode: true,
         }
     }]
 });

@@ -1,87 +1,179 @@
-                                        .coaches {
-                                            @include topborder;
-                                            &__slider {
-                                                display: flex;
-                                                justify-content: space-around;
-                                                flex-wrap: wrap;
-                                                min-width: 0;
-                                                &--slide {
-                                                    display: flex !important;
-                                                    min-width: 0;
-                                                }
-                                                &--descr {
+                                            .coaches {
+                                                @include topborder;
+                                                &__slider {
                                                     display: flex;
-                                                    flex-direction: column;
-                                                    margin-right: 90px;
-                                                    justify-content: space-between;
-                                                    margin-left: 20px;
-                                                }
-                                                &--img {
-                                                    display: flex;
+                                                    justify-content: space-around;
                                                     flex-wrap: wrap;
-                                                    flex-direction: row;
-                                                }
-                                                &--img img {
-                                                    height: 100%;
-                                                    width: auto
-                                                }
-                                                &--button {
-                                                    @include buttonstyle;
-                                                }
-                                                &--button span {
-                                                    color: $color-special;
+                                                    min-width: 0;
+                                                    &--slide {
+                                                        display: flex !important;
+                                                        min-width: 0;
+                                                    }
+                                                    &--descr {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        margin-right: 90px;
+                                                        justify-content: space-between;
+                                                        margin-left: 20px;
+                                                    }
+                                                    &--img {
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        flex-direction: row;
+                                                    }
+                                                    &--img img {
+                                                        height: 100%;
+                                                        width: auto
+                                                    }
+                                                    &--button {
+                                                        @include buttonstyle;
+                                                    }
+                                                    &--button span {
+                                                        color: $color-special;
+                                                    }
+                                                    &--item {
+                                                        font-family: $font-main;
+                                                        font-weight: 400;
+                                                        line-height: $top-indent/3;
+                                                        font-size: $top-indent/4;
+                                                    }
+                                                    &--itemspecial {
+                                                        font-family: $font-main;
+                                                        font-weight: bold;
+                                                        line-height: $top-indent/3;
+                                                        font-size: $top-indent/4;
+                                                    }
+                                                    &--title {
+                                                        font-family: $font-main;
+                                                        font-weight: 700;
+                                                        line-height: 22px;
+                                                        font-size: $top-indent/3;
+                                                    }
+                                                    &--subtitle {
+                                                        font-family: $font-main;
+                                                        font-weight: 400;
+                                                        line-height: $top-indent/3;
+                                                        font-size: $top-indent/4;
+                                                    }
+                                                    &--number {
+                                                        font-family: $font-main;
+                                                        font-weight: 700;
+                                                        line-height: $top-indent/3;
+                                                        font-size: $top-indent/4;
+                                                    }
                                                 }
                                             }
-                                        }
-                                        
-                                        .slick-list {
-                                            overflow: hidden;
-                                        }
-                                        
-                                        .slick-track {
-                                            display: flex;
-                                        }
-                                        
-                                        .slick-slide .slick-current {
-                                            display: flex;
-                                        }
-                                        
-                                        .special__button {
-                                            display: none;
-                                        }
-                                        
-                                        @media(max-width:900px) {
-                                            .coaches__slider--slide {
-                                                display: flex !important;
-                                                min-width: 0;
-                                                flex-wrap: wrap;
+                                            
+                                            .slick-list {
+                                                overflow: hidden;
                                             }
-                                            .coaches {
-                                                margin-left: $top-indent/2;
-                                                margin-right: $top-indent/2;
+                                            
+                                            .slick-track {
+                                                display: flex;
                                             }
-                                        }
-                                        
-                                        @media (max-width:700px) {
-                                            .coaches {
-                                                margin-left: $top-indent/4;
-                                                margin-right: $top-indent/4;
+                                            
+                                            .slick-slide .slick-current {
+                                                display: flex;
                                             }
-                                        }
-                                        
-                                        @media (max-width:640px) {
-                                            // .coaches__slider {
-                                            //     flex-wrap: nowrap;
-                                            // }
-                                            .coaches__btn {
+                                            
+                                            .special__button {
                                                 display: none;
                                             }
-                                            .special__button {
-                                                display: inline;
+                                            
+                                            @media(max-width:900px) {
+                                                .coaches__slider--slide {
+                                                    display: flex !important;
+                                                    min-width: 0;
+                                                    flex-wrap: wrap;
+                                                }
+                                                .coaches {
+                                                    margin-left: $top-indent/2;
+                                                    margin-right: $top-indent/2;
+                                                }
                                             }
-                                            .coaches__slider--button {
-                                                border-radius: 50%;
-                                                width: 30px;
-                                                height: 10px;
+                                            
+                                            @media (max-width:700px) {
+                                                .coaches {
+                                                    margin-left: $top-indent/4;
+                                                    margin-right: $top-indent/4;
+                                                }
                                             }
-                                        }
+                                            
+                                            @media (max-width:640px) {
+                                                // .coaches__slider {
+                                                //     flex-wrap: nowrap;
+                                                // }
+                                                .coaches__btn {
+                                                    display: none;
+                                                }
+                                                .special__button {
+                                                    display: inline;
+                                                }
+                                                .coaches__slider--button {
+                                                    border-radius: 50%;
+                                                    width: 30px;
+                                                    height: 10px;
+                                                }
+                                            }
+                                            
+                                            .slick-slide {
+                                                display: flex !important;
+                                                float: left;
+                                                height: 100%;
+                                                min-height: 1px;
+                                            }
+                                            
+                                            @media (max-width:900px) {
+                                                .slick-slide {
+                                                    display: flex !important;
+                                                    /* float: left; */
+                                                    height: 100%;
+                                                    min-height: 1px;
+                                                    flex-wrap: wrap;
+                                                }
+                                            }
+                                            
+                                            @media (max-width:640px) {
+                                                .slick-slide {
+                                                    display: flex !important;
+                                                    /* float: left; */
+                                                    height: 100%;
+                                                    min-height: 1px;
+                                                    /* flex-wrap: wrap; */
+                                                }
+                                                .slick-list {
+                                                    padding: 0 20% 0 0;
+                                                }
+                                                .coaches__slider {
+                                                    &--item {
+                                                        font-family: $font-main;
+                                                        font-weight: 400;
+                                                        line-height: 19px;
+                                                        font-size: 13px;
+                                                    }
+                                                    &--itemspecial {
+                                                        font-family: $font-main;
+                                                        font-weight: bold;
+                                                        line-height: 19px;
+                                                        font-size: 13px;
+                                                    }
+                                                    &--title {
+                                                        font-family: $font-main;
+                                                        font-weight: 700;
+                                                        line-height: 16px;
+                                                        font-size: $top-indent/4;
+                                                    }
+                                                    &--subtitle {
+                                                        font-family: $font-main;
+                                                        font-weight: 400;
+                                                        line-height: 19px;
+                                                        font-size: 13px;
+                                                    }
+                                                    &--number {
+                                                        font-family: $font-main;
+                                                        font-weight: 700;
+                                                        line-height: $top-indent/4;
+                                                        font-size: 12px;
+                                                    }
+                                                }
+                                            }

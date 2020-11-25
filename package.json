@@ -23,6 +23,7 @@
         "lodash": "^4.17.20"
     },
     "dependencies": {
+        "animate.css": "^4.1.1",
         "slick-slider": "^1.8.2"
     }
 }
