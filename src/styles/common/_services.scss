@@ -33,15 +33,3 @@
          width: auto;
      }
  }
- 
- .slider-arrows {
-     width: 20px;
-     height: 20px;
- }
- 
- @media(max-width:992px) {
-     .services__slider {
-         display: flex;
-         flex-wrap: wrap;
-     }
- }

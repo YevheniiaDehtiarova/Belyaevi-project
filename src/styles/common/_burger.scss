@@ -54,13 +54,12 @@
                 &_line {
                     display: block;
                     position: absolute;
-                    right: 50%;
-                    // top: 50%;
-                    transform: translate(480%, 480%);
+                    left: 50%;
+                    top: 50%;
                     width: 35px;
                     height: 3px;
                     background-color: black;
-                    transition: all 0.3s;
+                    transition: all 0.7s;
                     &::before {
                         content: "";
                         position: absolute;
@@ -162,7 +161,6 @@
         }
     }
     
-    //new menu
     .mobile-menu-wrapper {
         background-image: url(src/assets/img/menu-logo.png);
         width: 375px;
@@ -174,6 +172,7 @@
         top: 0;
         right: 0;
         background-color: #fff;
+        transition: all 0.7s;
     }
     
     .mobile-menu__list li a {

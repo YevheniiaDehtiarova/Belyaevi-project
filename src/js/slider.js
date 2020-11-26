@@ -54,6 +54,7 @@ $('.coaches__slider').slick({
             infinite: true,
             dots: false,
             centerMode: true,
+            variableWidth: true,
         }
     }]
 });

@@ -1,85 +1,85 @@
-                                                                                * {
-                                                                                    box-sizing: border-box;
-                                                                                }
-                                                                                
-                                                                                body {
-                                                                                    overflow-x: hidden;
-                                                                                    overflow-y: scroll;
-                                                                                }
-                                                                                
-                                                                                .container {
-                                                                                    max-width: 1920px;
-                                                                                    width: 100%;
-                                                                                }
-                                                                                
-                                                                                a {
-                                                                                    text-decoration: none;
-                                                                                    color: black;
-                                                                                }
-                                                                                
-                                                                                a:hover {
-                                                                                    border-bottom: 1px solid black;
-                                                                                }
-                                                                                
-                                                                                ul,
-                                                                                li {
-                                                                                    list-style: none;
-                                                                                    margin: 0;
-                                                                                    padding: 0;
-                                                                                    font-family: $font-regular;
-                                                                                }
-                                                                                
-                                                                                ul {
-                                                                                    display: block;
-                                                                                }
-                                                                                
-                                                                                .section__descr {
-                                                                                    margin-top: 100px;
-                                                                                }
-                                                                                
-                                                                                .descr__title {
-                                                                                    font-family: $font-main;
-                                                                                    font-weight: 700;
-                                                                                    font-size: $top-indent/4;
-                                                                                    line-height: 16px;
-                                                                                }
-                                                                                
-                                                                                .descr__text {
-                                                                                    width: 668px;
-                                                                                    height: 50px;
-                                                                                    margin: $top-indent/3 0;
-                                                                                    font-family: $font-main;
-                                                                                    font-weight: 400;
-                                                                                    font-size: 16px;
-                                                                                    line-height: $top-indent/3;
-                                                                                }
-                                                                                
-                                                                                .section__descr {
-                                                                                    display: flex;
-                                                                                    flex-direction: column;
-                                                                                }
-                                                                                
-                                                                                .footer__container {
-                                                                                    background-color: black;
-                                                                                    display: flex;
-                                                                                    width: 100%;
-                                                                                    min-height: 90px;
-                                                                                    justify-content: space-between;
-                                                                                    align-items: center;
-                                                                                    &--descr {
-                                                                                        margin-left: $top-indent/2;
-                                                                                        font-family: $font-main;
-                                                                                        font-weight: 700;
-                                                                                        line-height: $top-indent/3;
-                                                                                        font-size: $top-indent/4;
-                                                                                        color: #fff;
-                                                                                    }
-                                                                                    &--mail {
-                                                                                        font-family: $font-main;
-                                                                                        font-weight: 400;
-                                                                                        line-height: $top-indent/3;
-                                                                                        font-size: 16px;
-                                                                                        color: #fff;
-                                                                                        margin-right: $top-indent/2;
-                                                                                    }
-                                                                                }
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     overflow-x: hidden;
+     overflow-y: scroll;
+ }
+ 
+ .container {
+     max-width: 1920px;
+     width: 100%;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ a:hover {
+     border-bottom: 1px solid black;
+ }
+ 
+ ul,
+ li {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     font-family: $font-regular;
+ }
+ 
+ ul {
+     display: block;
+ }
+ 
+ .section__descr {
+     margin-top: 100px;
+ }
+ 
+ .descr__title {
+     font-family: $font-main;
+     font-weight: 700;
+     font-size: $top-indent/4;
+     line-height: 16px;
+ }
+ 
+ .descr__text {
+     width: 668px;
+     height: 50px;
+     margin: $top-indent/3 0;
+     font-family: $font-main;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: $top-indent/3;
+ }
+ 
+ .section__descr {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .footer__container {
+     background-color: black;
+     display: flex;
+     width: 100%;
+     min-height: 90px;
+     justify-content: space-between;
+     align-items: center;
+     &--descr {
+         margin-left: $top-indent/2;
+         font-family: $font-main;
+         font-weight: 700;
+         line-height: $top-indent/3;
+         font-size: $top-indent/4;
+         color: #fff;
+     }
+     &--mail {
+         font-family: $font-main;
+         font-weight: 400;
+         line-height: $top-indent/3;
+         font-size: 16px;
+         color: #fff;
+         margin-right: $top-indent/2;
+     }
+ }
