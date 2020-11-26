@@ -156,4 +156,14 @@
         .slick-slide .slick-active {
             max-width: 100px !important;
         }
+        .header__content {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            &--descr {
+                width: 55%;
+            }
+            &--picture {
+                width: 55%;
+            }
+        }
     }
