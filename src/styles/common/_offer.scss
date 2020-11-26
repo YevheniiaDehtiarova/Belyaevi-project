@@ -1,6 +1,4 @@
     .offer {
-        @include topborder;
-        max-width: 100%;
         &__list {
             display: grid;
             grid-template-areas: "a1 a2 a3 a4" "a5 a6 a7 a8";

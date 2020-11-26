@@ -6,9 +6,8 @@
               }
               
               .header {
-                  min-height: 100vh;
-                  max-width: 100%;
-                  @include topborder;
+                  //   height: 100vh;
+                  margin-bottom: 60px;
                   &__logo {
                       font-family: $font-main;
                       font-weight: 700;
@@ -37,20 +36,22 @@
               
               .header__content {
                   display: flex;
-                  height: 80vh;
                   &--picture {
                       flex-grow: 1;
                       display: flex;
                       flex-wrap: wrap;
                       flex-direction: row;
+                      width: 60%;
                   }
                   &--img {
                       height: 100%;
-                      width: auto;
+                      width: 100%;
+                      object-fit: cover;
                   }
                   &--descr {
                       display: flex;
                       flex-direction: column;
+                      width: 40%;
                       flex-grow: 1;
                   }
                   &--title {

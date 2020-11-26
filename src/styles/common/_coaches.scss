@@ -1,5 +1,4 @@
  .coaches {
-     @include topborder;
      &__slider {
          display: flex;
          justify-content: space-around;
@@ -12,9 +11,9 @@
          &--descr {
              display: flex;
              flex-direction: column;
-             margin-right: 90px;
              justify-content: space-between;
-             margin-left: 20px;
+             align-items: stretch;
+             padding-left: 30px;
          }
          &--img {
              display: flex;

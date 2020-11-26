@@ -1,17 +1,27 @@
-@mixin buttonstyle {
-    max-width: $top-indent*2;
-    min-height: 46px;
-    border: 2px solid $color-special;
-    font-family: $font-main;
-    margin-bottom: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 56px;
-    background-color: #fff;
-}
-
-@mixin topborder {
-    margin-left: $top-indent;
-    margin-right: $top-indent;
-}
+    @mixin buttonstyle {
+        max-width: $top-indent*2;
+        min-height: 46px;
+        border: 2px solid $color-special;
+        font-family: $font-main;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 56px;
+        background-color: #fff;
+    }
+    
+    @mixin topborder() {
+        padding-left: $top-indent;
+        padding-right: $top-indent;
+    }
+    
+    @mixin tabletborder() {
+        padding-left: $top-indent/2;
+        padding-right: $top-indent/2;
+    }
+    
+    @mixin mobileborder() {
+        padding-left: 16px;
+        padding-right: 16px;
+    }

@@ -1,6 +1,5 @@
  .services {
-     @include topborder;
-     min-height: 100vh;
+     //  min-height: 100vh;
      &__slider {
          display: flex;
          justify-content: space-between;
