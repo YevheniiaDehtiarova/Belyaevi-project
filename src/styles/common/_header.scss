@@ -1,83 +1,89 @@
-              .header-wrapper {
-                  display: flex;
-                  justify-content: space-around;
-                  padding-top: 30px;
-                  height: 80px;
-              }
-              
-              .header {
-                  //   height: 100vh;
-                  margin-bottom: 60px;
-                  &__logo {
-                      font-family: $font-main;
-                      font-weight: 700;
-                      font-size: $top-indent/4;
-                      line-height: 16px;
-                  }
-                  &__button {
-                      font-family: $font-main;
-                      font-weight: 600;
-                      border: 1px solid black;
-                      text-align: center;
-                      width: 116px;
-                      height: $top-indent/2;
-                      padding: 6px 32px;
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                  }
-                  &__list {
-                      display: flex;
-                  }
-                  &__list li {
-                      margin-right: $top-indent/3;
-                  }
-              }
-              
-              .header__content {
-                  display: flex;
-                  &--picture {
-                      flex-grow: 1;
-                      display: flex;
-                      flex-wrap: wrap;
-                      flex-direction: row;
-                      width: 60%;
-                  }
-                  &--img {
-                      height: 100%;
-                      width: 100%;
-                      object-fit: cover;
-                  }
-                  &--descr {
-                      display: flex;
-                      flex-direction: column;
-                      width: 40%;
-                      flex-grow: 1;
-                  }
-                  &--title {
-                      margin: $top-indent 112px 16px 0px;
-                      font-family: $font-main;
-                      font-size: $top-indent;
-                      line-height: 67px;
-                      font-weight: 700;
-                  }
-                  &--subtitle {
-                      font-family: $font-main;
-                      font-size: $top-indent/3;
-                      line-height: 30px;
-                      font-weight: 500;
-                  }
-                  &--text {
-                      margin: 40px 77px 40px 0px;
-                      font-family: $font-main;
-                      font-weight: 400;
-                      font-size: 16px;
-                      line-height: $top-indent/3;
-                  }
-                  &--button {
-                      @include buttonstyle;
-                  }
-                  &--button p {
-                      color: $color-special;
-                  }
-              }
+                      .header-wrapper {
+                          display: flex;
+                          justify-content: space-around;
+                          padding-top: 30px;
+                          height: 80px;
+                      }
+                      
+                      .header {
+                          //   height: 100vh;
+                          margin-bottom: 60px;
+                          &__logo {
+                              font-family: $font-main;
+                              font-weight: 700;
+                              font-size: $top-indent/4;
+                              line-height: 16px;
+                          }
+                          &__button {
+                              font-family: $font-main;
+                              font-weight: 600;
+                              border: 1px solid black;
+                              text-align: center;
+                              width: 116px;
+                              height: $top-indent/2;
+                              padding: 6px 32px;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                          }
+                          &__button:hover {
+                              cursor: pointer;
+                          }
+                          &__list {
+                              display: flex;
+                          }
+                          &__list li {
+                              margin-right: $top-indent/3;
+                          }
+                      }
+                      
+                      .header__content {
+                          display: flex;
+                          &--picture {
+                              flex-grow: 1;
+                              display: flex;
+                              flex-wrap: wrap;
+                              flex-direction: row;
+                              width: 60%;
+                          }
+                          &--img {
+                              height: 100%;
+                              width: 100%;
+                              object-fit: cover;
+                          }
+                          &--descr {
+                              display: flex;
+                              flex-direction: column;
+                              width: 40%;
+                              flex-grow: 1;
+                          }
+                          &--title {
+                              margin: $top-indent 112px 16px 0px;
+                              font-family: $font-main;
+                              font-size: $top-indent;
+                              line-height: 67px;
+                              font-weight: 700;
+                          }
+                          &--subtitle {
+                              font-family: $font-main;
+                              font-size: $top-indent/3;
+                              line-height: 30px;
+                              font-weight: 500;
+                          }
+                          &--text {
+                              margin: 40px 77px 40px 0px;
+                              font-family: $font-main;
+                              font-weight: 400;
+                              font-size: 16px;
+                              line-height: $top-indent/3;
+                          }
+                          &--button {
+                              @include buttonstyle;
+                          }
+                          &--button:hover {
+                              cursor: pointer;
+                          }
+                          &--button p {
+                              color: $color-special;
+                          }
+                      }

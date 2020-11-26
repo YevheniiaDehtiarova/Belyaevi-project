@@ -1,87 +1,90 @@
- .coaches {
-     &__slider {
-         display: flex;
-         justify-content: space-around;
-         flex-wrap: wrap;
-         min-width: 0;
-         &--slide {
-             display: flex !important;
-             min-width: 0;
-         }
-         &--descr {
+     .coaches {
+         &__slider {
              display: flex;
-             flex-direction: column;
-             justify-content: space-between;
-             align-items: stretch;
-             padding-left: 30px;
-         }
-         &--img {
-             display: flex;
+             justify-content: space-around;
              flex-wrap: wrap;
-             flex-direction: row;
-         }
-         &--img img {
-             height: 100%;
-             width: auto
-         }
-         &--button {
-             @include buttonstyle;
-         }
-         &--button span {
-             color: $color-special;
-         }
-         &--item {
-             font-family: $font-main;
-             font-weight: 400;
-             line-height: $top-indent/3;
-             font-size: $top-indent/4;
-         }
-         &--itemspecial {
-             font-family: $font-main;
-             font-weight: bold;
-             line-height: $top-indent/3;
-             font-size: $top-indent/4;
-         }
-         &--title {
-             font-family: $font-main;
-             font-weight: 700;
-             line-height: 22px;
-             font-size: $top-indent/3;
-         }
-         &--subtitle {
-             font-family: $font-main;
-             font-weight: 400;
-             line-height: $top-indent/3;
-             font-size: $top-indent/4;
-         }
-         &--number {
-             font-family: $font-main;
-             font-weight: 700;
-             line-height: $top-indent/3;
-             font-size: $top-indent/4;
+             min-width: 0;
+             &--slide {
+                 display: flex !important;
+                 min-width: 0;
+             }
+             &--descr {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: space-between;
+                 align-items: stretch;
+                 padding-left: 30px;
+             }
+             &--img {
+                 display: flex;
+                 flex-wrap: wrap;
+                 flex-direction: row;
+             }
+             &--img img {
+                 height: 100%;
+                 width: auto
+             }
+             &--button {
+                 @include buttonstyle;
+             }
+             &--button span {
+                 color: $color-special;
+             }
+             &--button:hover {
+                 cursor: pointer;
+             }
+             &--item {
+                 font-family: $font-main;
+                 font-weight: 400;
+                 line-height: $top-indent/3;
+                 font-size: $top-indent/4;
+             }
+             &--itemspecial {
+                 font-family: $font-main;
+                 font-weight: bold;
+                 line-height: $top-indent/3;
+                 font-size: $top-indent/4;
+             }
+             &--title {
+                 font-family: $font-main;
+                 font-weight: 700;
+                 line-height: 22px;
+                 font-size: $top-indent/3;
+             }
+             &--subtitle {
+                 font-family: $font-main;
+                 font-weight: 400;
+                 line-height: $top-indent/3;
+                 font-size: $top-indent/4;
+             }
+             &--number {
+                 font-family: $font-main;
+                 font-weight: 700;
+                 line-height: $top-indent/3;
+                 font-size: $top-indent/4;
+             }
          }
      }
- }
- 
- .slick-slide {
-     display: flex !important;
-     float: left;
-     height: 100%;
-     min-height: 1px;
- }
- 
- .slick-list {
-     overflow: hidden;
- }
- 
- .slick-track {
-     display: flex;
- }
- 
- .slick-slide .slick-current {
-     display: flex;
- }
- 
- .special__button {
-     display: none;
- }
+     
+     .slick-slide {
+         display: flex !important;
+         float: left;
+         height: 100%;
+         min-height: 1px;
+     }
+     
+     .slick-list {
+         overflow: hidden;
+     }
+     
+     .slick-track {
+         display: flex;
+     }
+     
+     .slick-slide .slick-current {
+         display: flex;
+     }
+     
+     .special__button {
+         display: none;
+     }
