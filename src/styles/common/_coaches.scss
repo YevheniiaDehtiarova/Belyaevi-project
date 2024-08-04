@@ -28,7 +28,7 @@
                  @include buttonstyle;
              }
              &--button span {
-                 color: $color-special;
+                 //color: $color-special;
              }
              &--button:hover {
                  cursor: pointer;
@@ -36,32 +36,32 @@
              &--item {
                  font-family: $font-main;
                  font-weight: 400;
-                 line-height: $top-indent/3;
-                 font-size: $top-indent/4;
+                line-height:calc($top-indent / 3);
+                 font-size: calc($top-indent / 4);
              }
              &--itemspecial {
                  font-family: $font-main;
                  font-weight: bold;
-                 line-height: $top-indent/3;
-                 font-size: $top-indent/4;
+                  line-height:calc($top-indent / 3);
+                 font-size: calc($top-indent / 4)
              }
              &--title {
                  font-family: $font-main;
                  font-weight: 700;
                  line-height: 22px;
-                 font-size: $top-indent/3;
+                 font-size: calc($top-indent / 3);
              }
              &--subtitle {
                  font-family: $font-main;
                  font-weight: 400;
-                 line-height: $top-indent/3;
-                 font-size: $top-indent/4;
+                 line-height: calc($top-indent / 3);
+                 font-size: calc($top-indent / 4);
              }
              &--number {
                  font-family: $font-main;
                  font-weight: 700;
-                 line-height: $top-indent/3;
-                 font-size: $top-indent/4;
+                line-height: calc($top-indent / 3);
+                 font-size: calc($top-indent / 4);
              }
          }
      }

@@ -12,16 +12,16 @@
          font-family: $font-main;
          font-weight: 400;
          font-size: 16px;
-         line-height: $top-indent/3;
+         //line-height: $top-indent/3;
          margin-top: 8px;
      }
      &--title {
          font-family: $font-main;
          font-weight: 700;
-         font-size: $top-indent/3;
+        // font-size: $top-indent/3;
          line-height: 22px;
          margin-top: 40px;
-         margin-bottom: $top-indent/3;
+        // margin-bottom: $top-indent/3;
      }
      &--picture {
          display: flex;

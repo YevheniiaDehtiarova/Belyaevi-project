@@ -1,7 +1,7 @@
     @mixin buttonstyle {
         max-width: $top-indent*2;
         min-height: 46px;
-        border: 2px solid $color-special;
+       // border: 2px solid $color-special;
         font-family: $font-main;
         margin-bottom: 80px;
         display: flex;
@@ -17,8 +17,8 @@
     }
     
     @mixin tabletborder() {
-        padding-left: $top-indent/2;
-        padding-right: $top-indent/2;
+       //padding-left: $top-indent/2;
+        //padding-right: $top-indent/2;
     }
     
     @mixin mobileborder() {

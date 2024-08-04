@@ -1,24 +1,28 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    concat = require ('gulp-concat'),
-    rename = require('gulp-rename'),
-    autoprefixer = require('gulp-autoprefixer'),
-    watch = require('gulp-watch'),
-    iconfont    =   require( 'gulp-iconfont' ),
-    iconfontCss =   require( 'gulp-iconfont-css' );
+import gulp from 'gulp';
+import concat from 'gulp-concat';
+import rename from 'gulp-rename';
+import autoprefixer from 'gulp-autoprefixer';
+import watch from 'gulp-watch';
+import iconfont from 'gulp-iconfont';
+import iconfontCss from 'gulp-iconfont-css';
+import gulpSass from 'gulp-sass';
+import sass from 'sass';
 
+// Set the compiler to Dart Sass
+const sassCompiler = gulpSass(sass);
 
-//styles (compressed, autoprefixer)
-gulp.task('style', gulp.series(function () {
+const fontName = 'icons';
+
+// Styles (compressed, autoprefixer)
+gulp.task('style', function () {
     return gulp.src('src/styles/style.scss')
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sassCompiler({ outputStyle: 'compressed' }).on('error', sassCompiler.logError))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            overrideBrowserslist: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('./'))
-}));
-
+        .pipe(gulp.dest('./'));
+});
 
 gulp.task('watch', function () {
     return gulp.watch('src/styles/**/*.scss', gulp.series('default'));
@@ -26,27 +30,21 @@ gulp.task('watch', function () {
 
 gulp.task('default', gulp.series('style'));
 
-
-
-//icon fonts
-var fontName = 'icons';
-
-//add svg icons to the folder "icons" and use 'iconfont' task for generating icon font
-gulp.task( 'iconfont', async () => {
-    gulp.src( 'src/assets/icons/*.svg' )
-        .pipe( iconfontCss( {
-            // где будет наш scss файл
-            targetPath   : '../../styles/common/_icons.scss',
-            // пути подлючения шрифтов в _icons.scss
-            fontPath     : 'src/assets/fonts/',
-            fontName    : fontName
-
-        } ) )
-        .pipe( iconfont( {
-            fontName    : fontName,
-            formats     : [ 'svg', 'ttf', 'eot', 'woff', 'woff2' ],
-            normalize   : true,
-            fontHeight  : 1001
-        } ) )
-        .pipe( gulp.dest( 'src/assets/fonts' ) )
+// Icon fonts
+gulp.task('iconfont', function () {
+    return gulp.src('src/assets/icons/*.svg')
+        .pipe(iconfontCss({
+            // Path where our scss file will be
+            targetPath: '../../styles/common/_icons.scss',
+            // Path to fonts in _icons.scss
+            fontPath: 'src/assets/fonts/',
+            fontName: fontName
+        }))
+        .pipe(iconfont({
+            fontName: fontName,
+            formats: ['svg', 'ttf', 'eot', 'woff', 'woff2'],
+            normalize: true,
+            fontHeight: 1001
+        }))
+        .pipe(gulp.dest('src/assets/fonts'));
 });

@@ -8,8 +8,8 @@
         //media 992
         @media (max-width:992px) {
             .header__content--title {
-                margin: $top-indent/2 $top-indent 16px 0px;
-                font-size: $top-indent/2;
+               // margin: $top-indent/2 $top-indent 16px 0px;
+                //font-size: $top-indent/2;
                 line-height: 48px;
             }
             .header__content--text {
@@ -25,8 +25,8 @@
                 flex-wrap: wrap;
             }
             .coaches {
-                margin-left: $top-indent/2;
-                margin-right: $top-indent/2;
+               // margin-left: $top-indent/2;
+               // margin-right: $top-indent/2;
             }
             .slick-slide {
                 display: flex !important;
@@ -43,13 +43,13 @@
             }
             .header-wrapper,
             .header__content {
-                margin-left: $top-indent/4;
-                margin-right: $top-indent/4;
+               // margin-left: $top-indent/4;
+               // margin-right: $top-indent/4;
             }
             .header__content--title h1 {
-                margin: $top-indent/4 $top-indent 16px 0px;
-                font-size: $top-indent/4;
-                line-height: $top-indent/3;
+               // margin: $top-indent/4 $top-indent 16px 0px;
+               // font-size: $top-indent/4;
+                //line-height: $top-indent/3;
             }
             .header__button {
                 display: none;
@@ -58,8 +58,8 @@
                 width: 100px;
             }
             .coaches {
-                margin-left: $top-indent/4;
-                margin-right: $top-indent/4;
+                //margin-left: $top-indent/4;
+                //margin-right: $top-indent/4;
             }
             .button-menu {
                 display: none;
@@ -78,8 +78,8 @@
                 @include mobileborder();
             }
             .offer {
-                margin-left: $top-indent/2;
-                margin-right: $top-indent/2;
+               // margin-left: $top-indent/2;
+              //  margin-right: $top-indent/2;
                 &__list {
                     display: grid;
                     grid-template-areas: "a1 a2" "a3 a4" "a5 a6" "a7 a8";
@@ -113,7 +113,7 @@
                         font-family: $font-main;
                         font-weight: 700;
                         line-height: 16px;
-                        font-size: $top-indent/4;
+                       // font-size: $top-indent/4;
                     }
                     &--subtitle {
                         font-family: $font-main;
@@ -124,7 +124,7 @@
                     &--number {
                         font-family: $font-main;
                         font-weight: 700;
-                        line-height: $top-indent/4;
+                       // line-height: $top-indent/4;
                         font-size: 12px;
                     }
                     &--descr {
@@ -178,7 +178,7 @@
             .services__slide--title {
                 font-family: $font-main;
                 font-weight: 700;
-                font-size: $top-indent/4;
+               // font-size: $top-indent/4;
                 line-height: 16px;
                 margin-top: 14px;
                 margin-bottom: 16px;

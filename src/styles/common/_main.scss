@@ -38,18 +38,18 @@
  .descr__title {
      font-family: $font-main;
      font-weight: 700;
-     font-size: $top-indent/4;
+     font-size: calc($top-indent / 4);
      line-height: 16px;
  }
  
  .descr__text {
      max-width: 668px;
      width: 100%;
-     margin: $top-indent/3 0;
+     margin: calc($top-indent / 3) 0;
      font-family: $font-main;
      font-weight: 400;
      font-size: 16px;
-     line-height: $top-indent/3;
+     line-height: calc($top-indent / 3);
  }
  
  .section__descr {
@@ -65,19 +65,19 @@
      justify-content: space-between;
      align-items: center;
      &--descr {
-         margin-left: $top-indent/2;
+         //margin-left: $top-indent/2;
          font-family: $font-main;
          font-weight: 700;
-         line-height: $top-indent/3;
-         font-size: $top-indent/4;
+         line-height: calc($top-indent / 3);
+        // font-size: $top-indent/4;
          color: #fff;
      }
      &--mail {
          font-family: $font-main;
          font-weight: 400;
-         line-height: $top-indent/3;
+         line-height: calc($top-indent / 3);
          font-size: 16px;
          color: #fff;
-         margin-right: $top-indent/2;
+         //margin-right: $top-indent/2;
      }
  }

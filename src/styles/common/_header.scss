@@ -11,7 +11,7 @@
                           &__logo {
                               font-family: $font-main;
                               font-weight: 700;
-                              font-size: $top-indent/4;
+                              font-size: calc($top-indent / 4);
                               line-height: 16px;
                           }
                           &__button {
@@ -20,7 +20,7 @@
                               border: 1px solid black;
                               text-align: center;
                               width: 116px;
-                              height: $top-indent/2;
+                              //height: $top-indent/2;
                               padding: 6px 32px;
                               display: flex;
                               justify-content: center;
@@ -33,7 +33,7 @@
                               display: flex;
                           }
                           &__list li {
-                              margin-right: $top-indent/3;
+                              margin-right: calc($top-indent / 3);
                           }
                       }
                       
@@ -44,7 +44,7 @@
                               display: flex;
                               flex-wrap: wrap;
                               flex-direction: row;
-                              width: 60%;
+                              width: 40%;
                           }
                           &--img {
                               height: 100%;
@@ -54,8 +54,9 @@
                           &--descr {
                               display: flex;
                               flex-direction: column;
-                              width: 40%;
+                              width: 45%;
                               flex-grow: 1;
+                              background: $main-grey;
                           }
                           &--title {
                               margin: $top-indent 112px 16px 0px;
@@ -63,10 +64,11 @@
                               font-size: $top-indent;
                               line-height: 67px;
                               font-weight: 700;
+                              color: white;
                           }
                           &--subtitle {
                               font-family: $font-main;
-                              font-size: $top-indent/3;
+                              font-size: calc($top-indent / 3);
                               line-height: 30px;
                               font-weight: 500;
                           }
@@ -75,7 +77,7 @@
                               font-family: $font-main;
                               font-weight: 400;
                               font-size: 16px;
-                              line-height: $top-indent/3;
+                              line-height: calc($top-indent / 3);
                           }
                           &--button {
                               @include buttonstyle;
@@ -84,6 +86,6 @@
                               cursor: pointer;
                           }
                           &--button p {
-                              color: $color-special;
+                              //color: $color-special;
                           }
                       }
