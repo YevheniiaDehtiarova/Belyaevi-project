@@ -65,11 +65,11 @@
      justify-content: space-between;
      align-items: center;
      &--descr {
-         //margin-left: $top-indent/2;
+         margin-left: calc($top-indent/2);
          font-family: $font-main;
          font-weight: 700;
          line-height: calc($top-indent / 3);
-        // font-size: $top-indent/4;
+         font-size: calc($top-indent/4);
          color: #fff;
      }
      &--mail {
@@ -78,6 +78,6 @@
          line-height: calc($top-indent / 3);
          font-size: 16px;
          color: #fff;
-         //margin-right: $top-indent/2;
+         margin-right: calc($top-indent/2);
      }
  }

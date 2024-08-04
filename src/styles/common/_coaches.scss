@@ -27,9 +27,6 @@
              &--button {
                  @include buttonstyle;
              }
-             &--button span {
-                 //color: $color-special;
-             }
              &--button:hover {
                  cursor: pointer;
              }

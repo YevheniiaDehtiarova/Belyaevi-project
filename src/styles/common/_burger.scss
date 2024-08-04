@@ -2,15 +2,15 @@
     .burger-wrapper {
         display: none;
     }
-    
+
     .new-button {
         display: none;
     }
-    
+
     .special {
         display: none;
     }
-    
+
     .special-active {
         display: block;
         position: absolute;
@@ -19,30 +19,36 @@
         font-weight: bold;
         width: 50px;
     }
-    
+
     @media (max-width: 768px) {
         .header__list {
             display: block;
             padding-top: 20px;
         }
+
         .new-button {
             display: inline-block;
         }
+
         .header__list li {
             text-align: left;
             margin-bottom: 15px;
             font-weight: bold;
         }
+
         a:hover {
             border-bottom: none;
         }
+
         .burger {
             &-wrapper {
                 display: block;
             }
+
             &-inner {
                 position: relative;
             }
+
             &-button {
                 display: block;
                 position: relative;
@@ -51,6 +57,7 @@
                 border-radius: 50%;
                 background-color: transparent;
                 transition: all 0.3s;
+
                 &_line {
                     display: block;
                     position: absolute;
@@ -60,6 +67,7 @@
                     height: 3px;
                     background-color: black;
                     transition: all 0.7s;
+
                     &::before {
                         content: "";
                         position: absolute;
@@ -69,6 +77,7 @@
                         transform: translateY(-8px);
                         transition: all 0.3s;
                     }
+
                     &::after {
                         content: "";
                         position: absolute;
@@ -81,71 +90,89 @@
                 }
             }
         }
+
         .burger {
             &-button:hover {
                 filter: brightness(0.8);
+
                 .burger-button_line {
                     background-color: black;
+
                     &::before {
                         background-color: black;
                     }
+
                     &::after {
                         background-color: black;
                     }
                 }
             }
         }
+
         .burger-button-active {
             transition: all 0.3s;
+
             .burger-button_line {
                 background-color: transparent;
                 transition: all 0.3s;
             }
+
             .burger-button_line::before {
                 top: 0;
                 transform: rotate(45deg);
             }
+
             .burger-button_line::after {
                 top: 0;
                 transform: rotate(-45deg);
             }
         }
+
         .burger-button-active:hover {
             .burger-button_line {
                 background-color: transparent;
+
                 &::before {
                     background-color: black;
                 }
+
                 &::after {
                     background-color: black;
                 }
             }
         }
+
         // Burger-menu decoration
         .burger-menu {
             &-wrapper {
                 transition: all 0.4s;
                 display: block;
             }
+
             &-hidden {
                 display: none;
             }
+
             &-inner {
                 position: relative;
                 text-align: right;
             }
+
             &-list {
                 margin: 5px;
                 list-style: none;
                 text-align: center;
             }
+
             &_item {
                 padding: 5px 0;
             }
+
             &_link {
                 transition: all 0.3s;
                 text-decoration: none;
                 color: #c1c6db;
+
                 &:hover {
                     filter: brightness(0.8);
                     color: #ffc423;
@@ -153,14 +180,16 @@
                 }
             }
         }
+
         .menu {
             display: none;
         }
+
         .header__button {
             display: none;
         }
     }
-    
+
     .mobile-menu-wrapper {
         background-image: url(src/assets/img/menu-logo.png);
         width: 375px;
@@ -174,31 +203,27 @@
         background-color: #fff;
         transition: all 0.7s;
     }
-    
+
     .mobile-menu__list li a {
         font-family: $font-main;
         font-weight: 700;
         font-size: 24px;
         line-height: 22px;
     }
-    
+
     .mobile-menu__list li {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    
+
     .mobile-menu__list {
         background-color: transparent;
     }
-    
+
     .hidden {
         display: none;
     }
-    
+
     .mobile-menu-btn {
         @include buttonstyle;
-    }
-    
-    .mobile-menu-btn span {
-      //  color: $color-special;
     }

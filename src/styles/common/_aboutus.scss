@@ -1,36 +1,41 @@
-.about__us{
+.about__us {
     display: flex;
     flex-direction: column;
 
-    &-info{
+    &-info {
         display: flex;
         flex-direction: column;
         font-family: $font-main;
         font-weight: 400;
         color: $dark-brown;
         position: relative;
-        &-title{
+
+        &-title {
             font-size: 18px;
             line-height: 21px;
             position: absolute;
             top: 0;
-            left: 0;      
+            left: 0;
         }
-        &-subtitle, &-text{
-           font-size: 50px;
-           line-height: 60px;
+
+        &-subtitle,
+        &-text {
+            font-size: 50px;
+            line-height: 60px;
         }
-        &-subtitle{
+
+        &-subtitle {
             text-align: right;
         }
     }
-    &-button{
+
+    &-button {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 48px;
 
-        button{
+        button {
             background: $dark-brown;
             padding: 16px 36px;
             font-weight: 400;
@@ -38,15 +43,18 @@
             line-height: 22px;
             font-family: $font-main;
             color: $color-light;
-            &:hover{
-                background:  $color-light;
+
+            &:hover {
+                background: $color-light;
                 color: $dark-brown;
             }
         }
     }
-    &-banner{
+
+    &-banner {
         margin-top: 64px;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
