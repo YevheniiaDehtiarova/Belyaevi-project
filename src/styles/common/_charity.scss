@@ -1,0 +1,103 @@
+.charity {
+    font-family: $font-main;
+    background: $color-light;
+    padding: 120px 84px;
+
+    &__information {
+        color: $dark-brown;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &-title {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.6px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &-subtitle {
+            text-align: right;
+        }
+
+        &-subtitle,
+        &-text {
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: -0.03em;
+        }
+    }
+
+    &__text {
+        display: flex;;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+     
+        p,span{
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 29px;  
+            text-align: center;
+            color: $dark-brown;
+            width: 33%;
+            margin-bottom: 48px;
+        }
+    }
+    &__buttons{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 64px;
+    
+
+        button{
+            padding: 16px 36px;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px; 
+        }
+
+        .know{
+            border: 1px solid $dark-brown;
+            background: $color-light;
+            margin-right: 24px;
+        }
+        .join{
+          color: $color-light;
+          background: $dark-brown;
+        }
+    }
+    &__cards{
+        display: flex;
+
+        &-card{
+            flex: 0 0 25%;
+            margin-right: 24px;
+            min-height: 240px;
+            background: #E7E0DA;
+            position: relative;
+            p{
+                position: absolute;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 28px;
+                top: 24px;
+                left: 54px;
+            }
+            img{
+                width: 100px;
+                height: 120px;
+                position: absolute;
+                bottom: 24px;
+                right: 24px;
+            }
+        }
+    }
+}

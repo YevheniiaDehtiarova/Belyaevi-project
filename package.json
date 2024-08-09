@@ -25,6 +25,7 @@
     "dependencies": {
         "animate.css": "^4.1.1",
         "gulp-sass": "^5.1.0",
+        "slick": "^1.12.2",
         "slick-slider": "^1.8.2"
     },
     "type": "module"
