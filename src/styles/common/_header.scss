@@ -4,9 +4,10 @@
                           padding: 32px 90px;
                           color: $dark-brown;
                       }
-                      
+
                       .header {
                           margin-bottom: 60px;
+
                           &__logo {
                               font-family: $font-main;
                               font-weight: 400;
@@ -15,36 +16,42 @@
                               width: 111px;
                               height: 44px;
                           }
-                          &__menu{
-                            padding-top: 12px;
+
+                          &__menu {
+                              padding-top: 12px;
                           }
+
                           &__button {
                               font-family: $font-main;
                               font-weight: 400;
                               text-align: center;
                               padding-top: 12px;
                           }
+
                           &__button:hover {
                               cursor: pointer;
                           }
+
                           &__list {
                               display: flex;
                           }
+
                           &__list li {
                               margin-right: calc($top-indent / 3);
-                              a{
-                                color: $dark-brown;
-                                font-size: 16px;
-                                line-height: 22px;
-                                font-weight: 400;
-                                
-                                &:hover{
-                                    border-bottom: 1px solid $dark-brown;
-                                }
+
+                              a {
+                                  color: $dark-brown;
+                                  font-size: 16px;
+                                  line-height: 22px;
+                                  font-weight: 400;
+
+                                  &:hover {
+                                      border-bottom: 1px solid $dark-brown;
+                                  }
                               }
                           }
                       }
-                      
+
                       .header__content {
                           display: flex;
 
@@ -55,11 +62,13 @@
                               flex-direction: row;
                               width: 40%;
                           }
+
                           &--img {
                               height: 100%;
                               width: 100%;
                               object-fit: cover;
                           }
+
                           &--descr {
                               display: flex;
                               flex-direction: column;
@@ -71,6 +80,7 @@
                               padding-top: 150px;
                               padding-left: 10%;
                           }
+
                           &--title {
                               font-family: $font-main;
                               font-size: $top-indent;
@@ -81,12 +91,14 @@
                               width: 800px;
                               text-align: center;
                           }
+
                           &--subtitle {
                               font-family: $font-main;
                               font-size: calc($top-indent / 3);
                               line-height: 30px;
                               font-weight: 500;
                           }
+
                           &--text {
                               margin-top: 48px;
                               font-family: $font-main;
@@ -96,19 +108,21 @@
                               color: $color-light;
                               text-align: center;
                           }
+
                           &--button {
                               @include buttonstyle;
-                               padding: 16px 36px;
-                               max-width: 250px;
-                               min-height: 56px;
-                               color: $dark-brown;
-                               text-transform: uppercase;
-                               margin-top: 48px;
-                               font-weight: 400;
-                               font-size: 16px;
-                               line-height: 22px;
-                               margin-bottom: 0;    
+                              padding: 16px 36px;
+                              max-width: 250px;
+                              min-height: 56px;
+                              color: $dark-brown;
+                              text-transform: uppercase;
+                              margin-top: 48px;
+                              font-weight: 400;
+                              font-size: 16px;
+                              line-height: 22px;
+                              margin-bottom: 0;
                           }
+
                           &--button:hover {
                               cursor: pointer;
                               background-color: $dark-brown;

@@ -48,6 +48,11 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 22px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: $dark-brown;
+                    color: $color-light;
+                }
             }
 
             &-arrow {
@@ -76,9 +81,17 @@
         }
         .prev{
             right: 64px;
+            background: $beige-bg;
+            border: none;
+            border-radius: 50%;
+            padding: 6px;
         }
         .next{
             right: 0;
+            background: $beige-bg;
+            border: none;
+            border-radius: 50%;
+            padding: 6px;
         }
     }
 
@@ -111,6 +124,9 @@
             margin-top: 38px;
             position: absolute;
             bottom: 47px;
+            &:hover{
+                cursor: pointer;
+            }
         }
         &--text{
             left: 24px;
@@ -151,6 +167,11 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 23px;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $dark-brown;
+                        color: $color-light;
+                    }
                 }
             }
     

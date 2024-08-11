@@ -42,6 +42,11 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 22px;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $dark-brown;
+                        color: $color-light;
+                    }
                 }
             }
             &-result{
