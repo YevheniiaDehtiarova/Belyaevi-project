@@ -68,10 +68,20 @@
             border: 1px solid $dark-brown;
             background: $color-light;
             margin-right: 24px;
+            &:hover {
+                cursor: pointer;
+                background-color: $dark-brown;
+                color: $color-light;
+            }
         }
         .join{
           color: $color-light;
           background: $dark-brown;
+          &:hover {
+            cursor: pointer;
+            background-color: $color-light;
+            color: $dark-brown;
+        }
         }
     }
     &__cards{

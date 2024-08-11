@@ -1,8 +1,10 @@
 .about__us {
     display: flex;
     flex-direction: column;
+    padding: 120px 0px;
 
     &-info {
+        padding: 0 84px;
         display: flex;
         flex-direction: column;
         font-family: $font-main;
@@ -15,7 +17,7 @@
             line-height: 21px;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 84px;
         }
 
         &-subtitle,
