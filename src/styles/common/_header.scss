@@ -1,30 +1,28 @@
                       .header-wrapper {
                           display: flex;
                           justify-content: space-around;
-                          padding-top: 30px;
-                          height: 80px;
+                          padding: 32px 90px;
+                          color: $dark-brown;
                       }
                       
                       .header {
-                          //   height: 100vh;
                           margin-bottom: 60px;
                           &__logo {
                               font-family: $font-main;
-                              font-weight: 700;
-                              font-size: $top-indent/4;
-                              line-height: 16px;
+                              font-weight: 400;
+                              font-size: 24px;
+                              line-height: 22px;
+                              width: 111px;
+                              height: 44px;
+                          }
+                          &__menu{
+                            padding-top: 12px;
                           }
                           &__button {
                               font-family: $font-main;
-                              font-weight: 600;
-                              border: 1px solid black;
+                              font-weight: 400;
                               text-align: center;
-                              width: 116px;
-                              height: $top-indent/2;
-                              padding: 6px 32px;
-                              display: flex;
-                              justify-content: center;
-                              align-items: center;
+                              padding-top: 12px;
                           }
                           &__button:hover {
                               cursor: pointer;
@@ -33,18 +31,29 @@
                               display: flex;
                           }
                           &__list li {
-                              margin-right: $top-indent/3;
+                              margin-right: calc($top-indent / 3);
+                              a{
+                                color: $dark-brown;
+                                font-size: 16px;
+                                line-height: 22px;
+                                font-weight: 400;
+                                
+                                &:hover{
+                                    border-bottom: 1px solid $dark-brown;
+                                }
+                              }
                           }
                       }
                       
                       .header__content {
                           display: flex;
+
                           &--picture {
                               flex-grow: 1;
                               display: flex;
                               flex-wrap: wrap;
                               flex-direction: row;
-                              width: 60%;
+                              width: 40%;
                           }
                           &--img {
                               height: 100%;
@@ -54,36 +63,55 @@
                           &--descr {
                               display: flex;
                               flex-direction: column;
-                              width: 40%;
+                              width: 45%;
                               flex-grow: 1;
+                              background: linear-gradient(287.79deg, #9199A3 37.54%, #929BA4 110.46%);
+                              position: relative;
+                              align-items: center;
+                              padding-top: 150px;
+                              padding-left: 10%;
                           }
                           &--title {
-                              margin: $top-indent 112px 16px 0px;
                               font-family: $font-main;
                               font-size: $top-indent;
-                              line-height: 67px;
-                              font-weight: 700;
+                              line-height: 132px;
+                              font-weight: 400;
+                              font-size: 80px;
+                              color: $color-light;
+                              width: 800px;
+                              text-align: center;
                           }
                           &--subtitle {
                               font-family: $font-main;
-                              font-size: $top-indent/3;
+                              font-size: calc($top-indent / 3);
                               line-height: 30px;
                               font-weight: 500;
                           }
                           &--text {
-                              margin: 40px 77px 40px 0px;
+                              margin-top: 48px;
                               font-family: $font-main;
                               font-weight: 400;
-                              font-size: 16px;
-                              line-height: $top-indent/3;
+                              font-size: 18px;
+                              line-height: 28px;
+                              color: $color-light;
+                              text-align: center;
                           }
                           &--button {
                               @include buttonstyle;
+                               padding: 16px 36px;
+                               max-width: 250px;
+                               min-height: 56px;
+                               color: $dark-brown;
+                               text-transform: uppercase;
+                               margin-top: 48px;
+                               font-weight: 400;
+                               font-size: 16px;
+                               line-height: 22px;
+                               margin-bottom: 0;    
                           }
                           &--button:hover {
                               cursor: pointer;
-                          }
-                          &--button p {
-                              color: $color-special;
+                              background-color: $dark-brown;
+                              color: $color-light;
                           }
                       }
