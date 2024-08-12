@@ -32,4 +32,14 @@ accordionItems.forEach(item => {
     });
 });
 
+const cards = document.querySelectorAll('.results__cards-card');
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            cards.forEach(btn => btn.classList.remove('active'));
+            console.log(card, 'CARD');
+            card.classList.add('active')
+        });
+    });
+
 })();
