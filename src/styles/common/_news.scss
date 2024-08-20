@@ -46,6 +46,7 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 22px;
+                border: none;
 
                 &:hover {
                     cursor: pointer;
@@ -114,8 +115,13 @@
                 font-weight: 400;
                 line-height: 76px;
                 color: $color-light;
+                width: 95%;
                 &.first{
                     width: 75%;
+                }
+                &:hover{
+                    cursor: pointer;
+                    border: none !important;
                 }
             }
 
@@ -133,6 +139,8 @@
                 text-align: left;
                 border: none;
                 padding: 10px;
+
+
                 &:hover {
                     cursor: pointer;
                     background-color: $dark-brown;
@@ -188,6 +196,7 @@
 
     &--button {
         @include buttonstyle;
+        border: none;
     }
 
     &--button:hover {

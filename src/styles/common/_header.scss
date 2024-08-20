@@ -45,8 +45,9 @@
                                   line-height: 22px;
                                   font-weight: 400;
 
-                                  &:hover {
-                                      border-bottom: 1px solid $dark-brown;
+                                  &:hover{
+                                    border: none;
+                                    border-bottom: none !important;
                                   }
                               }
                           }
@@ -121,6 +122,7 @@
                               font-size: 16px;
                               line-height: 22px;
                               margin-bottom: 0;
+                              border: none;
                           }
 
                           &--button:hover {
