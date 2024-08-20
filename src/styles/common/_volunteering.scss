@@ -48,6 +48,8 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 22px;
+                border: none;
+
                 &:hover {
                     cursor: pointer;
                     background-color: $dark-brown;
@@ -167,6 +169,8 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 23px;
+                    border: none;
+
                     &:hover {
                         cursor: pointer;
                         background-color: $dark-brown;

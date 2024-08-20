@@ -63,10 +63,10 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 22px; 
+            border: none;
         }
 
         .know{
-            border: 1px solid $dark-brown;
             background: $color-light;
             margin-right: 24px;
             &:hover {

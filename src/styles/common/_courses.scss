@@ -67,6 +67,8 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    border: none;
+
                     img{
                         width: 36px;
                         height: 36px;
@@ -74,8 +76,6 @@
                     }
                     &:hover {
                         cursor: pointer;
-                        background-color: $dark-brown;
-                        color: $color-light;
                     }
                 }
             }
