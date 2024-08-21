@@ -34,10 +34,10 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
-}
 
-.footer-content ul li a:hover {
-    text-decoration: underline;
+    &:hover {
+        border: none !important;
+    }
 }
 
 .footer-right form {
@@ -99,8 +99,9 @@ footer {
     color: $yellow-text;
     text-decoration: none;
     margin-left: 15px;
+
+    &:hover{
+        border: none !important;
+    }
 }
 
-.social-links a:hover {
-    text-decoration: underline;
-}
