@@ -3,7 +3,7 @@
     background: $beige-bg;
 
     &__information {
-        padding: 120px 84px; 
+        padding: 120px 84px;
         color: $dark-brown;
         display: flex;
         justify-content: space-between;
@@ -75,14 +75,20 @@
         min-width: 0;
         padding-bottom: 120px;
 
-        .slick-arrow{
+        .slick-arrow {
             position: absolute;
             top: -88px;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
-        .prev{
+
+        .prev {
             right: 64px;
         }
-        .next{
+
+        .next {
             right: 0;
         }
     }
@@ -116,10 +122,12 @@
                 line-height: 76px;
                 color: $color-light;
                 width: 95%;
-                &.first{
+
+                &.first {
                     width: 75%;
                 }
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                     border: none !important;
                 }

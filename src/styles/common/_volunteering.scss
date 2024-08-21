@@ -80,6 +80,10 @@
         .slick-arrow{
             position: absolute;
             top: -88px;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
         .prev{
             right: 64px;

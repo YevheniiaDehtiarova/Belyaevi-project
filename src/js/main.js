@@ -27,8 +27,12 @@ accordionItems.forEach(item => {
     title.addEventListener('click', () => {
         const content = item.querySelector('.accordion-content');
         const isOpen = content.style.display === 'block';
-        document.querySelectorAll('.accordion-content').forEach(content => content.style.display = 'none');
+        document.querySelectorAll('.accordion-content').forEach(content => {
+            content.style.display = 'none';
+            content.style.maxHeight = '0';
+        });
         content.style.display = isOpen ? 'none' : 'block';
+        content.style.maxHeight = isOpen ? '0' : content.scrollHeight + 'px';
     });
 });
 
@@ -37,7 +41,6 @@ const cards = document.querySelectorAll('.results__cards-card');
     cards.forEach(card => {
         card.addEventListener('click', () => {
             cards.forEach(btn => btn.classList.remove('active'));
-            console.log(card, 'CARD');
             card.classList.add('active')
         });
     });

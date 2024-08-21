@@ -39,21 +39,19 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 48px;
-    width: 60%;
 }
 
 .tab-button {
     padding: 16px 48px;
     text-transform: uppercase;
     color: $dark-brown;
-    border: 1px solid $dark-brown;
     margin-right: 8px;
-    background: $beige-bg;
+    border: none;
+    background: none;
 }
 
 .tab-button.active {
-    background-color: $color-light;
-    color: $dark-brown;
+    border-bottom: 1px solid $dark-brown ;
 }
 
 .accordion-item {
@@ -83,10 +81,12 @@
     display: none;
     color: $dark-brown;
     background: $beige-bg;
+    transition: max-height 0.3s ease, padding 0.3s ease;
 
     p{
       font-weight: 400;
       font-size: 18px;
       line-height: 28px;
+      transition: max-height 0.3s ease, padding 0.3s ease;
     }
 }
