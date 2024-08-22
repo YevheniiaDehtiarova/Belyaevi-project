@@ -82,3 +82,17 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .courses{
+        flex-direction: column;
+        padding: 48px 16px;
+
+        &__content-left-buttons{
+            a{
+                margin-right: 16px;
+                padding: 12px 32px;
+            }
+        }
+    }
+}
