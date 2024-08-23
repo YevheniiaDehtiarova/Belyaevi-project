@@ -1,16 +1,16 @@
 .faq-section {
     display: flex;
     padding: 120px 84px;
-    background-color:$beige-bg;
+    background-color: $beige-bg;
     font-family: $font-main;
 }
 
 .faq-section__text {
     width: 40%;
     margin-right: 20px;
-    color: #8b5c5a; 
+    color: #8b5c5a;
 
-    h2{
+    h2 {
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
@@ -18,7 +18,8 @@
         text-transform: uppercase;
         margin-bottom: 48px;
     }
-    p{
+
+    p {
         font-weight: 400;
         font-size: 50px;
         line-height: 60px;
@@ -83,10 +84,34 @@
     background: $beige-bg;
     transition: max-height 0.3s ease, padding 0.3s ease;
 
-    p{
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
-      transition: max-height 0.3s ease, padding 0.3s ease;
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .faq-section {
+        padding: 60px 16px;
+        flex-direction: column;
+
+        &__text {
+            width: 100%;
+
+            p {
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+
+        &__content {
+            width: 100%;
+
+            .tabs {
+                display: none;
+            }
+        }
     }
 }

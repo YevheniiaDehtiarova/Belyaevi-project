@@ -276,6 +276,10 @@
     .news {
         padding: 60px 0;
 
+        &__content {
+            padding: 0 16px;
+        }
+
         &__information {
             padding: 0 16px;
 
@@ -284,7 +288,7 @@
                 top: 0;
             }
 
-            div{
+            div {
                 margin-top: 100px;
                 margin-bottom: 100px;
             }
@@ -300,9 +304,25 @@
 
         }
 
-        &__slider{
-            .prev, .next{
+        &__slider {
+
+            .prev,
+            .next {
                 display: none !important;
+            }
+
+            img {
+                width: auto;
+                max-width: 500px;
+            }
+
+            .news__slide--picture-text {
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            .podcast {
+                width: 50%;
             }
         }
     }
