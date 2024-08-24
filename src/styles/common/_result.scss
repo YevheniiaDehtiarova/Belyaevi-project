@@ -13,36 +13,38 @@
             height: 482px;
         }
 
-        &-left{
+        &-left {
             flex: 0 0 50%;
 
-            &-title{
+            &-title {
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 21px;
                 color: $dark-brown;
                 margin-bottom: 24px;
             }
-            &-subtitle{
+
+            &-subtitle {
                 font-weight: 400;
                 font-size: 18px;
-                line-height: 29px; 
+                line-height: 29px;
                 color: $dark-brown;
                 margin-bottom: 48px
             }
-            &-button{
+
+            &-button {
                 display: flex;
                 justify-content: center;
                 margin-bottom: 110px;
 
-                button{
+                button {
                     background: $color-light;
                     padding: 16px 36px;
                     text-transform: uppercase;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 22px;
-            
+
                     &:hover {
                         cursor: pointer;
                         background-color: $dark-brown;
@@ -50,7 +52,8 @@
                     }
                 }
             }
-            &-result{
+
+            &-result {
                 font-weight: 400;
                 font-size: 64px;
                 line-height: 76px;
@@ -59,24 +62,26 @@
         }
     }
 
-    &__cards{
+    &__cards {
         display: flex;
         margin-top: 120px;
-        &-card{
+
+        &-card {
             flex: 0 0 25%;
             border-top: 1px solid $text-pink;
             margin-right: 24px;
             transition: transform 0.3s ease, background-color 0.3s ease;
 
-            &:active, &.active{
+            &:active,
+            &.active {
                 border-top: 1px solid $dark-red;
 
-                p{
-                    color:  $dark-red;
+                p {
+                    color: $dark-red;
                 }
             }
 
-            p{
+            p {
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 28px;
@@ -87,4 +92,27 @@
     }
 
 
+}
+
+@media screen and (max-width: 640px) {
+    .results {
+        padding: 60px 16px;
+
+        &__context {
+            flex-direction: column;
+
+            &-left {
+                margin-top: 50px;
+
+                &-result {
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+            }
+        }
+
+        &__cards {
+            flex-direction: column;
+        }
+    }
 }

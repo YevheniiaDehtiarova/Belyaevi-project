@@ -33,68 +33,76 @@
     }
 
     &__text {
-        display: flex;;
+        display: flex;
+        ;
         justify-content: center;
         text-align: center;
         flex-direction: column;
         align-items: center;
-     
-        p,span{
+
+        p,
+        span {
             display: block;
             font-size: 18px;
             font-weight: 400;
-            line-height: 29px;  
+            line-height: 29px;
             text-align: center;
             color: $dark-brown;
             width: 33%;
             margin-bottom: 48px;
         }
     }
-    &__buttons{
+
+    &__buttons {
         display: flex;
         text-align: center;
         justify-content: center;
         margin-bottom: 64px;
-    
 
-        button{
+
+        button {
             padding: 16px 36px;
             text-transform: uppercase;
             font-weight: 400;
             font-size: 16px;
-            line-height: 22px; 
+            line-height: 22px;
             border: none;
         }
 
-        .know{
+        .know {
             background: $color-light;
             margin-right: 24px;
+
             &:hover {
                 cursor: pointer;
                 background-color: $dark-brown;
                 color: $color-light;
             }
         }
-        .join{
-          color: $color-light;
-          background: $dark-brown;
-          &:hover {
-            cursor: pointer;
-            background-color: $color-light;
-            color: $dark-brown;
-        }
+
+        .join {
+            color: $color-light;
+            background: $dark-brown;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $color-light;
+                color: $dark-brown;
+            }
         }
     }
-    &__cards{
+
+    &__cards {
         display: flex;
 
-        &-card{
+        &-card {
             flex: 0 0 25%;
             margin-right: 24px;
             min-height: 240px;
             background: #E7E0DA;
             position: relative;
-            p{
+
+            p {
                 position: absolute;
                 font-weight: 400;
                 font-size: 24px;
@@ -102,12 +110,65 @@
                 top: 24px;
                 left: 54px;
             }
-            img{
+
+            img {
                 width: 100px;
                 height: 120px;
                 position: absolute;
                 bottom: 24px;
                 right: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .charity {
+        padding: 60px 16px;
+
+        &__information {
+            padding: 0 16px;
+
+            &-title {
+                left: 48px;
+                top: 0;
+            }
+
+            div {
+                margin-top: 50px;
+                margin-bottom: 100px;
+                padding: 0 16px;
+            }
+
+
+            &-subtitle,
+            &-text {
+                font-size: 24px;
+                line-height: 30px;
+                text-align: center;
+                display: inline;
+            }
+        }
+
+        &__text {
+
+            p,
+            span {
+                width: 100%;
+                padding: 0 16px;
+            }
+        }
+
+        &__buttons {
+            flex-direction: column;
+        }
+
+        &__cards {
+            padding: 0 16px;
+            flex-direction: column;
+
+            &-card {
+                margin-bottom: 20px;
             }
         }
     }

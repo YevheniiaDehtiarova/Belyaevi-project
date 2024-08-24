@@ -27,7 +27,19 @@ $('.news__slider').slick({
         breakpoint: 640,
         settings: {
             slidesToShow: 1,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            centerMode: true,
+            variableWidth: true,
+            
+        }
+    },
+    {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: true,
             dots: false,
             centerMode: true,
@@ -46,7 +58,18 @@ $('.volunteering__slider').slick({
         breakpoint: 640,
         settings: {
             slidesToShow: 1,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            centerMode: true,
+            variableWidth: true,
+        }
+    },
+    {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: true,
             dots: false,
             centerMode: true,
