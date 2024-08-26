@@ -83,15 +83,18 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 821px) {
     .courses{
         flex-direction: column;
         padding: 48px 16px;
+        &__content-left{
+            text-align: center;
+        }
 
         &__content-left-buttons{
             a{
-                margin-right: 16px;
-                padding: 12px 32px;
+                margin-right: 10px;
+                padding: 10px 30px;
             }
         }
     }

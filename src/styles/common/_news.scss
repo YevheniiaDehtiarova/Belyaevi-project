@@ -272,16 +272,21 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 821px) {
     .news {
         padding: 60px 0;
 
         &__content {
             padding: 0 16px;
+
+            &-header{
+                justify-content: center;
+            }
         }
 
         &__information {
             padding: 0 16px;
+            text-align: center;
 
             &-title {
                 left: 48px;

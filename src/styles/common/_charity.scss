@@ -122,12 +122,13 @@
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 821px) {
     .charity {
         padding: 60px 16px;
 
         &__information {
             padding: 0 16px;
+            text-align: center;
 
             &-title {
                 left: 48px;
@@ -161,6 +162,11 @@
 
         &__buttons {
             flex-direction: column;
+
+            .know{
+                margin: 0 10px 20px 10px;
+                padding: 16px 36px;
+            }
         }
 
         &__cards {
@@ -169,6 +175,16 @@
 
             &-card {
                 margin-bottom: 20px;
+                margin-right: 0;
+
+                p{
+                    top: 25%;
+                    left: 25%;
+                }
+                img{
+                    bottom: 15%;
+                    right: 40%;
+                }
             }
         }
     }
