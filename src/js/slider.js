@@ -11,13 +11,10 @@ $('.news__slider').slick({
     responsive: [{
         breakpoint: 821,
         settings: {
-            slidesToShow: 2,
-        }
-    },
-    {
-        breakpoint: 576,
-        settings: {
             slidesToShow: 1,
+            dots: false,
+            centerMode: true,
+            variableWidth: true,
         }
     }]
 });
@@ -30,22 +27,9 @@ $('.volunteering__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 640,
+        breakpoint: 821,
         settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-            centerMode: true,
-            variableWidth: true,
-        }
-    },
-    {
-        breakpoint: 480,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
             dots: false,
             centerMode: true,
             variableWidth: true,

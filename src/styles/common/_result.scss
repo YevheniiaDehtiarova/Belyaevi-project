@@ -94,7 +94,7 @@
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 821px) {
     .results {
         padding: 60px 16px;
 
@@ -103,6 +103,7 @@
 
             &-left {
                 margin-top: 50px;
+                text-align: center;
 
                 &-result {
                     font-size: 32px;
