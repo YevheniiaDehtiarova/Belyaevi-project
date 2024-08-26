@@ -4,30 +4,35 @@
                 padding-left: 0;
             }
         }
-        
+
         //media 992
         @media (max-width:992px) {
             .header__content--title {
-               // margin: $top-indent/2 $top-indent 16px 0px;
+                // margin: $top-indent/2 $top-indent 16px 0px;
                 //font-size: $top-indent/2;
                 line-height: 48px;
             }
+
             .header__content--text {
                 margin: 20px 36px 20px 0px;
             }
+
             .services__slider {
                 display: flex;
                 flex-wrap: wrap;
             }
+
             .coaches__slider--slide {
                 display: flex !important;
                 min-width: 0;
                 flex-wrap: wrap;
             }
+
             .coaches {
-               // margin-left: $top-indent/2;
-               // margin-right: $top-indent/2;
+                // margin-left: $top-indent/2;
+                // margin-right: $top-indent/2;
             }
+
             .slick-slide {
                 display: flex !important;
                 height: 100%;
@@ -35,97 +40,115 @@
                 flex-wrap: wrap;
             }
         }
-        
+
         //media 768
         @media (max-width:768px) {
-    
+
             .header-wrapper,
             .header__content {
-               margin-left: calc($top-indent/4);
-               margin-right: calc($top-indent/4);
+                margin-left: calc($top-indent/4);
+                margin-right: calc($top-indent/4);
             }
+
             .header__content--title h1 {
-                margin:calc( $top-indent/4) $top-indent 16px 0px;
+                margin: calc($top-indent/4) $top-indent 16px 0px;
                 font-size: calc($top-indent/4);
                 line-height: calc($top-indent/3);
             }
+
             .header__button {
                 display: none;
             }
+
             .header__content--button {
                 width: 100px;
             }
+
             .coaches {
                 margin-left: calc($top-indent/4);
                 margin-right: calc($top-indent/4);
             }
+
             .button-menu {
                 display: none;
             }
+
             .services__slide {
                 width: auto;
             }
+
             .services__slider {
                 justify-content: center;
             }
         }
-        
+
         //media 640px
         @media (max-width:640px) {
             .offer {
-               margin-left: calc($top-indent/2);
-               margin-right: calc($top-indent/2);
+                margin-left: calc($top-indent/2);
+                margin-right: calc($top-indent/2);
+
                 &__list {
                     display: grid;
                     grid-template-areas: "a1 a2" "a3 a4" "a5 a6" "a7 a8";
                     grid-template-columns: auto;
                 }
             }
+
             .coaches {
                 margin-left: 0;
                 margin-right: 0;
+
                 &__slider {
                     flex-wrap: nowrap;
+
                     &--slide {
                         display: flex !important;
                         min-width: 0;
                         flex-wrap: wrap;
                         justify-content: space-between;
                     }
+
                     &--item {
                         font-family: $font-main;
                         font-weight: 400;
                         line-height: 19px;
                         font-size: 13px;
                     }
+
                     &--itemspecial {
                         font-family: $font-main;
                         font-weight: bold;
                         line-height: 19px;
                         font-size: 13px;
                     }
+
                     &--title {
                         font-family: $font-main;
                         font-weight: 700;
                         line-height: 16px;
-                        font-size:calc($top-indent/4);
+                        font-size: calc($top-indent/4);
                     }
+
                     &--subtitle {
                         font-family: $font-main;
                         font-weight: 400;
                         line-height: 19px;
                         font-size: 13px;
                     }
+
                     &--number {
                         font-family: $font-main;
                         font-weight: 700;
                         line-height: calc($top-indent/4);
                         font-size: 12px;
                     }
+
                     &--descr {
                         margin-right: 0px;
                         margin-left: 0px;
                     }
+
                     &--button {
                         border-radius: 50%;
                         width: 30px;
@@ -133,44 +156,58 @@
                         min-height: 30px;
                     }
                 }
+
                 &__btn {
                     display: none;
                 }
             }
+
             .special__button {
                 display: inline;
             }
-            .slick-slide {
+
+             .slick-slide {
                 display: flex !important;
                 height: 100%;
                 min-height: 1px;
             }
-            .slick-slider .slick-track,
+
+            /*.slick-slider .slick-track,
             .slick-slider .slick-list {
                 max-width: 640px;
                 padding: 0 16px !important;
             }
+
             .slick-track {
                 max-width: 500px !important;
-            }
+            }*/
+
             .slick-slide .slick-current .slick-active,
             .slick-initialized .slick-slide {
-                max-width: 500px !important;
-                padding-right: 10px;
+                width: 95% !important;
+                padding: 0 10px; 
+
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 100%;
+                }
             }
-            .slick-slide .slick-active {
-                max-width: 100px !important;
-            }
+
+
             .header__content {
                 display: flex;
                 flex-wrap: wrap-reverse;
+
                 &--descr {
                     width: 55%;
                 }
+
                 &--picture {
                     width: 55%;
                 }
             }
+
             .services__slide--title {
                 font-family: $font-main;
                 font-weight: 700;
@@ -180,5 +217,3 @@
                 margin-bottom: 16px;
             }
         }
-        
-  
