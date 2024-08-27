@@ -92,6 +92,9 @@
         }
 
         &__content-left-buttons{
+            width: 100%;
+            justify-content: center;
+            
             a{
                 margin-right: 10px;
                 padding: 10px 30px;

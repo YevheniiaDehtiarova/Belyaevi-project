@@ -12,9 +12,8 @@ $('.news__slider').slick({
         breakpoint: 821,
         settings: {
             slidesToShow: 1,
+            slidesToScroll: 1,
             dots: false,
-            centerMode: true,
-            variableWidth: true,
         }
     }]
 });
@@ -30,9 +29,8 @@ $('.volunteering__slider').slick({
         breakpoint: 821,
         settings: {
             slidesToShow: 1,
-            dots: false,
-            centerMode: true,
-            variableWidth: true,
+            slidesToScroll: 1,
+            dots: false
         }
     }]
 });
@@ -40,4 +38,7 @@ $('.volunteering__slider').slick({
 
 $(window).on('resize', function() {
     $('.news__slider').slick('setPosition');
+});
+$(window).on('resize', function() {
+    $('.volunteering__slider').slick('setPosition');
 });
