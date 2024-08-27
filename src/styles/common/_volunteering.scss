@@ -234,6 +234,7 @@
 
         &__information {
             padding: 0 16px;
+            text-align: center;
 
             &-title {
                 left: 48px;
@@ -281,10 +282,18 @@
                 }
             }
         }
+        &__content{
+            &-header{
+                justify-content: center;
+            }
+        }
         &__slider{
             .prev,
             .next {
                 display: none !important;
+            }
+            img{
+                width: auto !important;
             }
         }
     }

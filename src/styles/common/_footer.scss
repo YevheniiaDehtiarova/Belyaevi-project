@@ -14,9 +14,11 @@ footer {
     position: relative;
 
 
-  .right,.left,.center{
-      flex: 0 0 33%;
-  }
+    .right,
+    .left,
+    .center {
+        flex: 0 0 33%;
+    }
 }
 
 .footer-content ul {
@@ -45,7 +47,7 @@ footer {
     position: relative;
     margin-right: 450px;
 
-    img{
+    img {
         position: absolute;
         top: 10px;
         right: 18px;
@@ -58,7 +60,8 @@ footer {
     border-radius: 3px 0 0 3px;
     background: $dark-brown;
     color: $yellow-text;
-    &::placeholder{
+
+    &::placeholder {
         color: $yellow-text;
         font-weight: 400;
         font-size: 18px;
@@ -75,7 +78,7 @@ footer {
     cursor: pointer;
 }
 
-.footer-picture{
+.footer-picture {
     position: absolute;
     right: -84px;
     top: 0px;
@@ -88,7 +91,8 @@ footer {
     font-size: 14px;
     width: 70%;
 
-    p,div a{
+    p,
+    div a {
         font-weight: 400;
         font-size: 18px;
         line-height: 29px;
@@ -100,14 +104,39 @@ footer {
     text-decoration: none;
     margin-left: 15px;
 
-    &:hover{
+    &:hover {
         border: none !important;
     }
 }
 
 
 @media screen and (max-width: 821px) {
-    .footer-content{
+    footer {
+        padding: 50px 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-picture {
+        right: -100px;
+        bottom: -120px;
+        top: auto;
+    }
+
+    .footer-right {
+        form {
+            margin-right: 0;
+
+            img {
+                left: 180px;
+                top: 10px;
+            }
+        }
+    }
+
+    .footer-bottom {
         flex-direction: column;
     }
 }
