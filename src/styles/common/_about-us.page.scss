@@ -1,0 +1,150 @@
+.crumbs {
+    display: flex;
+    flex-direction: column;
+    color: $dark-brown;
+    margin-bottom: 48px;
+
+
+    &-subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+
+    }
+
+    &-title {
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 76.8px;
+        letter-spacing: -0.03em;
+        text-align: left;
+    }
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        flex: 0 0 48%;
+        display: block;
+        background: #E7E0DA;
+        height: 240px;
+        margin-right: 24px;
+        margin-bottom: 24px;
+        position: relative;
+
+        span {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28.8px;
+            text-align: left;
+            color: $dark-brown;
+        }
+    }
+}
+
+.container {
+    padding: 0px 84px;
+}
+
+.container__history {
+    padding: 0 84px 120px 84px;
+
+    &-institute {
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-main;
+            font-weight: 400;
+            color: $dark-brown;
+            position: relative;
+
+            &-title {
+                font-size: 18px;
+                line-height: 21px;
+                position: absolute;
+                top: 0;
+                left: 0px;
+            }
+
+            &-subtitle,
+            &-text {
+                font-size: 50px;
+                line-height: 60px;
+            }
+
+            &-subtitle {
+                text-align: right;
+
+            }
+        }
+
+        &-content {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            text-align: center;
+            color: $dark-brown;
+            margin-top: 48px;
+            padding: 0 15%;
+        }
+
+        &-image {
+            padding: 48px 15% 120px 15%;
+        }
+    }
+
+    &-benefit {
+        background: $beige-bg;
+        padding: 120px 84px;
+
+        &-title {
+            //styleName: H4;
+            font-family: Tenor Sans;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            margin-bottom: 48px;
+        }
+
+        &-cards {
+            display: flex;
+            flex-wrap: wrap;
+
+            .card {
+                flex: 1 1 24%;
+                margin-right: 24px;
+                margin-bottom: 64px;
+                color: $dark-brown;
+
+                .number {
+                    border-bottom: 1px solid $dark-brown;
+                    margin-bottom: 48px;
+                }
+
+                .title {
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 28.8px;
+                    text-align: left;
+                    margin-bottom: 12px;
+                }
+
+                .text {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28.8px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
