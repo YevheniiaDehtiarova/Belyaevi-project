@@ -91,7 +91,7 @@
             font-size: 18px;
             font-weight: 400;
             line-height: 28.8px;
-            text-align: center;
+            text-align: left;
             color: $dark-brown;
             margin-top: 48px;
             padding: 0 15%;
@@ -107,8 +107,6 @@
         padding: 120px 84px;
 
         &-title {
-            //styleName: H4;
-            font-family: Tenor Sans;
             font-size: 50px;
             font-weight: 400;
             line-height: 60px;
@@ -228,10 +226,99 @@
             text-align: left;
             width: 60%;
 
-            a{
+            a {
                 color: #E9B068;
                 border-bottom: 1px solid #E9B068;
             }
+        }
+    }
+}
+
+.container__teachers {
+    &-history {
+        padding: 120px 84px;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-main;
+            font-weight: 400;
+            color: $dark-brown;
+            position: relative;
+
+            &-title {
+                font-size: 18px;
+                line-height: 21px;
+                position: absolute;
+                top: 0;
+                left: 0px;
+            }
+
+            &-subtitle,
+            &-text {
+                font-size: 50px;
+                line-height: 60px;
+            }
+
+            &-subtitle {
+                text-align: right;
+
+            }
+        }
+
+        &-content {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            text-align: left;
+            ;
+            color: $dark-brown;
+            margin-top: 48px;
+            padding: 0 15%;
+        }
+
+        &-image {
+            padding: 48px 15% 120px 15%;
+        }
+    }
+
+    &-content {
+        padding: 120px 84px;
+        background: $beige-bg;
+        color: $dark-brown;
+
+        &-title {
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            margin-bottom: 48px;
+        }
+
+        &-cards {
+            display: flex;
+            flex-wrap: wrap;
+
+            div {
+                flex: 0 0 30%;
+                margin-right: 24px;
+                margin-top: 48px;
+            }
+
+            &-card {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28.8px;
+                text-align: left;
+            }
+
+            &-image {
+                background: $dark-brown;
+                width: 420px;
+                height: 530px;
+            }
+
         }
     }
 }
