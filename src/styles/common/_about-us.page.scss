@@ -3,6 +3,7 @@
     flex-direction: column;
     color: $dark-brown;
     margin-bottom: 48px;
+    padding: 0px 84px;
 
 
     &-subtitle {
@@ -53,9 +54,10 @@
 }
 
 .container__history {
-    padding: 0 84px 120px 84px;
+
 
     &-institute {
+        padding: 120px 84px;
 
         &-info {
             display: flex;
@@ -144,6 +146,91 @@
                     line-height: 28.8px;
                     text-align: left;
                 }
+            }
+        }
+    }
+
+    &-line {
+        background-color: $dark-brown;
+        padding: 120px 84px;
+        color: #E9B068;
+
+        &__title {
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            text-align: left;
+            margin-bottom: 48px;
+        }
+
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        &__item {
+            background-color: $color-light;
+            color: $dark-brown;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            min-height: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 24px;
+            align-items: flex-start;
+        }
+
+        &__image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+        &__name {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            text-align: left;
+
+        }
+
+        &__disclaimer-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            text-align: left;
+            margin-bottom: 48px;
+            color: #E9B068;
+            margin-bottom: 48px;
+            margin-top: 48px;
+            width: 60%;
+        }
+
+        &__disclaimer {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28.8px;
+            text-align: left;
+            width: 60%;
+
+            a{
+                color: #E9B068;
+                border-bottom: 1px solid #E9B068;
             }
         }
     }
