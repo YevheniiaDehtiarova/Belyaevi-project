@@ -3,7 +3,7 @@
     flex-direction: column;
     color: $dark-brown;
     margin-bottom: 48px;
-    padding: 0px 84px;
+
 
 
     &-subtitle {
@@ -54,6 +54,10 @@
 }
 
 .container__history {
+
+    .crumbs {
+        padding: 0 84px;
+    }
 
 
     &-institute {
@@ -235,6 +239,10 @@
 }
 
 .container__teachers {
+    .crumbs {
+        padding: 0 84px;
+    }
+
     &-history {
         padding: 120px 84px;
 
@@ -319,6 +327,138 @@
                 height: 530px;
             }
 
+        }
+    }
+}
+
+.container__team {
+
+    .crumbs {
+        padding: 0 84px;
+    }
+
+    &-teachers {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 84px;
+        color: $dark-brown;
+
+        div {
+            margin-right: 140px;
+        }
+
+        &-title {
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            margin-bottom: 12px;
+        }
+
+        &-subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.6px;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        &-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            text-align: left;
+        }
+
+        img {
+            width: 40%;
+            height: auto;
+        }
+    }
+
+    &-curator {
+        padding: 48px 84px;
+        color: $dark-brown;
+
+        &-title {
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        &-card {
+            width: 420px;
+            height: 502px;
+            background: $beige-bg;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 24px;
+
+            &-name {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 28.8px;
+                text-align: left;
+                margin-bottom: 8px;
+            }
+
+            &-role {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28.8px;
+                text-align: left;
+            }
+        }
+    }
+
+    &-curators {
+        padding: 48px 84px;
+        color: $dark-brown;
+
+        &-title {
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        &-cards {
+            flex-wrap: wrap;
+            display: flex;
+
+            &-card {
+                flex: 0 0 30%;
+                height: 502px;
+                background: $beige-bg;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 24px;
+                margin-right: 24px;
+                margin-bottom: 24px;
+
+                &-name {
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 28.8px;
+                    text-align: left;
+                    margin-bottom: 8px;
+                }
+
+                &-role {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28.8px;
+                    text-align: left;
+                }
+            }
         }
     }
 }
