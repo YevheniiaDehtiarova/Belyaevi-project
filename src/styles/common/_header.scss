@@ -130,3 +130,68 @@
                               color: $color-light;
                           }
                       }
+       
+                
+                    .dropdown-menu li {
+                        padding: 10px 20px;
+                    }
+                    
+                    .dropdown-menu li a {
+                        text-decoration: none;
+                        color: #333;
+                        display: block;
+                    }
+                    
+                    .dropdown-menu li a:hover {
+                        background-color: #f1f1f1;
+                    }
+
+                    .arrow {
+                        display: inline-block;
+                        margin-left: 5px;
+                        transition: transform 0.3s ease;
+                    }
+                    
+                    .open .arrow {
+                          transform: rotate(180deg);
+                         }
+                    .dropdown:hover .arrow {
+                        transform: rotate(180deg);
+                    }
+                    
+            
+                    .dropdown-menu {
+                        display: none;
+                        position: absolute;
+                        background-color: #ffffff;
+                        box-shadow: 0 4px 8px $dark-brown;
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    
+            
+                     .dropdown-menu.open{
+                        display: block !important;
+                        margin-bottom: 50px;
+                    }
+                    
+    
+                    .dropdown-menu li {
+                        padding: 10px 20px;
+                    }
+                    
+                    .dropdown-menu li a {
+                        text-decoration: none;
+                        color: $dark-brown;
+                        display: block;
+                    }
+                    
+                    .dropdown-menu li a:hover {
+                        background-color: #f1f1f1;
+                    }
+
+                    .wide{
+                        margin-bottom: 100px;
+                        transition: 1s;
+                    }

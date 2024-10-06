@@ -58,4 +58,21 @@ const cards = document.querySelectorAll('.results__cards-card');
         });
     });
 
+
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+const headerWrapper = document.querySelector('.header-wrapper')
+
+dropdownToggles.forEach(function(dropdownToggle) {
+dropdownToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    const dropdownMenu = this.nextElementSibling;
+    const parentLi = this.parentElement;
+
+    dropdownMenu.classList.toggle('open');
+    parentLi.classList.toggle('open'); 
+    
+    headerWrapper.classList.toggle('wide');
+});
+});
+
 })();
