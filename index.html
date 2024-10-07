@@ -26,8 +26,28 @@
                             <div class="mobile-menu-inner">
                                 <ul class="mobile-menu__list">
                                     <li><a href="#">Головна</a></li>
-                                    <li> <a href="#">Про нас</a></li>
-                                    <li> <a href="#"> Курси</a></li>
+                                    <li> <a  class="dropdown-toggle" href="src/pages/about-us/about-us.html">Про нас<span class="arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="./src/pages/about-us/about-us-history.html">Історія АСІ</a></li>
+                                            <li><a href="./src/pages/about-us/about-us-teachers.html">Юлія та Євгеній Беляєві</a></li>
+                                            <li><a href="./src/pages/about-us/about-us-team.html">Про команду</a></li>
+                                        </ul>
+                                    </li>
+                                    <li> 
+                                        <a  class="dropdown-toggle" href="src/pages/courses/courses.html">Курси <span class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                            </svg>
+                                        </span></a> 
+                                        <ul class="dropdown-menu">
+                                            <li><a href="./src/pages/courses/courses-cost.html".>Комерційні курси</a></li>
+                                            <li><a href="./src/pages/courses/courses-free.html">Безцінні курси ACI</a></li>
+                                        </ul>
+                                    </li>
                                     <li> <a href="#">Новини</a></li>
                                     <li><a href="#">Благодійність</a></li>
                                     <li><a href="#">Результати студентів</a></li>
@@ -35,7 +55,7 @@
                                 </ul>
                             </div>
                         </div>
-
+        
                         <a href="#" class="burger-button">
                             <span class="burger-button_line"></span>
                         </a>
@@ -44,11 +64,31 @@
                 <div class="burger-menu-wrapper">
                     <div class="burger-menu-inner burger-menu-hidden">
                         <nav class="header__menu">
-
+        
                             <ul class="header__list">
                                 <li><a href="#">Головна</a></li>
-                                <li> <a href="#">Про нас</a></li>
-                                <li> <a href="#"> Курси</a></li>
+                                <li> <a class="dropdown-toggle" href="src/pages/about-us/about-us.html">Про нас<span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="./src/pages/about-us/about-us-history.html">Історія АСІ</a></li>
+                                        <li><a href="./src/pages/about-us/about-us-teachers.html">Юлія та Євгеній Беляєві</a></li>
+                                        <li><a href="./src/pages/about-us/about-us-team.html">Про команду</a></li>
+                                    </ul>
+                                </li>
+                                <li> 
+                                    <a href="src/pages/courses/courses.html" class="dropdown-toggle">Курси <span class="arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </span></a>  
+                                    <ul class="dropdown-menu">
+                                        <li><a href="./src/pages/courses/courses-cost.html">Комерційні курси</a></li>
+                                        <li><a href="./src/pages/courses/courses-free.html">Безцінні курси ACI</a></li>
+                                    </ul>
+                                </li>
                                 <li> <a href="#">Новини</a></li>
                                 <li><a href="#">Благодійність</a></li>
                                 <li><a href="#">Результати студентів</a></li>
@@ -80,6 +120,7 @@
                         src="src/assets/img/main-logo.jpg" alt="">
                 </div>
         </header>
+        <main>
         <section class="about__us">
             <div class="about__us-info">
                 <span class="about__us-info-title">ПРО НАС</span>
@@ -359,51 +400,49 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="footer-content">
-                <div class="footer-left">
-                    <ul>
-                        <li><a href="#">Головна</a></li>
-                        <li><a href="#">Про нас</a></li>
-                        <li><a href="#">Курси</a></li>
-                        <li><a href="#">Новини</a></li>
-                        <li><a href="#">Контакти</a></li>
-                    </ul>
-                </div>
-                <div class="footer-center">
-                    <ul>
-                        <li><a href="#">Благодійність/Карма клуб</a></li>
-                        <li><a href="#">Результати студентів</a></li>
-                        <li><a href="#">Волонтерство</a></li>
-                        <li><a href="#">Часті запитання</a></li>
-                        <li><a href="#">Книги</a></li>
-                    </ul>
-                </div>
-                <div class="footer-right">
-                    <form action="#">
-                        <input type="text" placeholder="Пошук">
-                        <img src="src/assets/img/search-icon.png" alt="">
-                    </form>
-                </div>
-           
-                <div class="footer-picture">
-                    <img src="src/assets/img/footer-icon.png" alt="">
-                </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Курси</a></li>
+                    <li><a href="#">Новини</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024. Всі права захищені</p>
-                <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="#">Telegram</a>
-                </div>
-            
+            <div class="footer-center">
+                <ul>
+                    <li><a href="#">Благодійність/Карма клуб</a></li>
+                    <li><a href="#">Результати студентів</a></li>
+                    <li><a href="#">Волонтерство</a></li>
+                    <li><a href="#">Часті запитання</a></li>
+                    <li><a href="#">Книги</a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="footer-right">
+                <form action="#">
+                    <input type="text" placeholder="Пошук">
+                    <img src="src/assets/img/search-icon.png" alt="">
+                </form>
+            </div>
+       
+            <div class="footer-picture">
+                <img src="src/assets/img/footer-icon.png" alt="">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024. Всі права захищені</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Telegram</a>
+            </div>
+        
+        </div>
+    </footer>
     </div>
-  
     
-  
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="src/js/slick.min.js"></script>

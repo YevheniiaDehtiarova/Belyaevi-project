@@ -13,6 +13,19 @@
         logo.classList.toggle('hidden');
     };
 
+const squares = document.querySelectorAll('.about-us-block');
+
+squares.forEach(square => {
+    square.addEventListener('click', function() {
+        const target = document.querySelector(this.getAttribute('data-target'));
+
+        document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+
+        target.classList.remove('hidden');
+    });
+});
+
+
 const tabButtons = document.querySelectorAll('.tab-button');
 tabButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -44,5 +57,22 @@ const cards = document.querySelectorAll('.results__cards-card');
             card.classList.add('active')
         });
     });
+
+
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+const headerWrapper = document.querySelector('.header-wrapper')
+
+dropdownToggles.forEach(function(dropdownToggle) {
+dropdownToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    const dropdownMenu = this.nextElementSibling;
+    const parentLi = this.parentElement;
+
+    dropdownMenu.classList.toggle('open');
+    parentLi.classList.toggle('open'); 
+    
+    headerWrapper.classList.toggle('wide');
+});
+});
 
 })();
