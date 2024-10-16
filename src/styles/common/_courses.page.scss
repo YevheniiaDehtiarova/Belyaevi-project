@@ -939,5 +939,59 @@ button:hover {
                 padding: 0 16px;
             }
         }
+        &__common{
+            .crumbs{
+                padding: 0 16px;
+            }
+            &-content{
+                padding: 48px 16px;
+                flex-direction: column;
+                margin-bottom: 0;
+                h5{
+                    margin-bottom: 24px;
+                }
+            }
+            &-schedule{
+                padding: 48px 16px;
+                h2{
+                    width: 100%;
+                }
+            }
+        }
+        &__aci{
+            .crumbs{
+                padding: 0 16px;
+            }
+            &-descr{
+                flex-direction: column;
+                div{
+                    margin-right: 0;
+                }
+            }
+            &-program{
+                flex-direction: column;
+                div{
+                    width: 100%;
+                }
+            }
+        }
+        &__wonder{
+            .crumbs{
+                padding: 48px 16px;
+            }
+            .container{
+                .courses__wonder-money{
+                    padding: 48px 16px;
+                    flex-direction: column;
+                    img{
+                        flex: 0 0 100%;
+                        width: 100%;
+                    }
+                }
+                .results{
+                    padding: 48px 16px;
+                }
+            }
+        }
     }
 }
