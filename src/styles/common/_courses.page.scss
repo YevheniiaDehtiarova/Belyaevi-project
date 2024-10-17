@@ -638,6 +638,10 @@
                 text-align: left;
                 margin-bottom: 48px;
                 list-style: normal;
+
+                @media screen and (max-width: 821px) {
+                    margin-left: 15px;
+                }
             }
 
             div {
@@ -749,7 +753,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 821px) {
     .container {
         padding: 0 16px;
 
@@ -976,6 +980,7 @@ button:hover {
             }
         }
         &__wonder{
+            padding: 0 16px;
             .crumbs{
                 padding: 48px 16px;
             }
