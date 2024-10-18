@@ -682,6 +682,9 @@
             line-height: 22px;
             position: inherit;
             text-align: left;
+            &:hover{
+                color: $color-light;
+            }
         }
     }
 }
@@ -734,7 +737,6 @@
 
 button {
     background-color: $dark-brown;
-    color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
